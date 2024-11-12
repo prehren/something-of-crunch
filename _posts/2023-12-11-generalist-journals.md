@@ -31,7 +31,7 @@ One way to quantify *how* over-represented the LEMM-ing fields are is to calcula
 <thead>
 <tr class="header">
 <th align="left">Sub-field cluster</th>
-<th align="right"><span class="math inline">(<em>R</em>)</span></th>
+<th align="right"><span class="math inline"><em>R</em></span></th>
 </tr>
 </thead>
 <tbody>
