@@ -13,7 +13,7 @@ I determined which journals are indexed on both PP and WoS, and then downloaded 
 
 Next, I needed a list of top generalist philosophy journals. I used [LeiterReports' ranking](https://leiterreports.typepad.com/blog/2022/07/best-general-philosophy-journals-2022.html) of the best general philosophy journals. Four of these journals are not indexed on WoS (*Proceedings of the Aristotelian Society*; *Ergo*; *The Monist*; *Philosophical Topics*) and so I had to exclude them.
 
-For each of the 22 LeiterReports journals, I calculated the proportion of articles published in the last 10 years from each of the five major sub-field clusters listed on PhilPapers. If an article was assigned to more than one sub-field cluster, I included it more than once. Figure 1 shows these proportions averaged across journals. The LEMM-ing fields indeed dominate: The share of LEM&M articles is larger than the share of articles from the other four sub-field clusters combined (56.1% vs. 43.9%).
+For each of the 22 LeiterReports journals, I calculated the proportion of articles published in the last 10 years from each of the five major sub-field clusters listed on PhilPapers. If an article was assigned to more than one sub-field cluster, I included it more than once. Figure 1 shows these proportions averaged across journals. The LEMM-ing fields indeed dominate: The share of LEM&M articles is larger than the share of articles from the other four sub-field clusters *combined* (56.1% vs. 43.9%).
 
 ![Figure 1. Mean proportion of articles from philosophy's five major sub-fields across across 22 top generalist journals (SL&M = Philosophy of Science, Logic and Mathematics).](https://raw.githubusercontent.com/prehren/something-of-crunch/71c6d36bf8de523c44411387ea3607a661e1ce1b/assets/images/2023-12-11/fig1.png)
 <p style="text-align:center; font-size: 0.75em; padding-right: 30px; padding-left: 30px;">Figure 1. Mean proportion of articles from philosophy's five major sub-fields across across 22 top generalist journals (SL&M = Philosophy of Science, Logic and Mathematics).</p>
@@ -23,7 +23,39 @@ How unusual is this? Perhaps the LEMM-ing fields are just more popular than the 
 ![Figure 2. Mean proportion of articles from philosophy's five major sub-fields across 198 non-top and/or non-generalist journals.](https://raw.githubusercontent.com/prehren/something-of-crunch/71c6d36bf8de523c44411387ea3607a661e1ce1b/assets/images/2023-12-11/fig1.png)
 <p style="text-align:center; font-size: 0.75em; padding-right: 30px; padding-left: 30px;">Figure 2. Mean proportion of articles from philosophy's five major sub-fields across 198 non-top and/or non-generalist journals.</p>
 
-One way to quantify how over-represented the LEMM-ing fields are is to calculate their representativeness ratio R, defined as the propotion of LEM&M articles in the top generalist journals divided by the proportion of LEM&M articles in other philosophy journals. R > 1 indicates over-representation; R < 1 indicates under-representation. The table below shows R for philosophy's five main sub-field clusters.
+One way to quantify *how* over-represented the LEMM-ing fields are is to calculate their representativeness ratio R, defined as the propotion of LEM&M articles in the top generalist journals divided by the proportion of LEM&M articles in other philosophy journals. _R_ > 1 indicates over-representation; _R_ < 1 indicates under-representation. The table below shows R for philosophy's five main sub-field clusters.
+
+<table>
+<caption><span id="tab:unnamed-chunk-6">Table 1: </span>Representativeness index R for philosophy’s five main sub-field clusters.</caption>
+<thead>
+<tr class="header">
+<th align="left">Sub-field cluster</th>
+<th align="right"><span class="math inline">\(R\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">History of Western Philosophy</td>
+<td align="right">0.30</td>
+</tr>
+<tr class="even">
+<td align="left">LEM&amp;M</td>
+<td align="right">2.39</td>
+</tr>
+<tr class="odd">
+<td align="left">Philosophical Traditions</td>
+<td align="right">0.06</td>
+</tr>
+<tr class="even">
+<td align="left">SL&amp;M</td>
+<td align="right">0.64</td>
+</tr>
+<tr class="odd">
+<td align="left">Value Theory</td>
+<td align="right">0.80</td>
+</tr>
+</tbody>
+</table>
 
 The LEMM-ing fields' R comes out as 2.39—in other words, the proportion of LEM&M articles in the the top generalist journals is more than twice that of LEM&M articles in other journals. In contrast, the other four sub-field clusters all have Rs less than one and so are under-represented (compared to the porportions shown in Figure 2), though not all to the same extent. In particular, History of Western Philosophy and Philosophical Traditions fare quite a lot worse than Value Theory and SL&M. History of Western Philosophy articles are about three times less common in the top generalist journals than in other journals, while Philosophical Traditions articles are almost 17 times less common in the top generalist journals than in other journals.
 
