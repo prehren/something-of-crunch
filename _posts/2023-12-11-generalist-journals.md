@@ -17,6 +17,8 @@ For each of the 22 LeiterReports journals, I calculated the proportion of articl
 
 ![Figure 1. Mean proportion of articles from philosophy's five major sub-fields across across 22 top generalist journals (SL&M = Philosophy of Science, Logic and Mathematics).](https://raw.githubusercontent.com/prehren/something-of-crunch/71c6d36bf8de523c44411387ea3607a661e1ce1b/assets/images/2023-12-11/fig1.png)
 
+<p style="text-align:center;">Figure 1. Mean proportion of articles from philosophy's five major sub-fields across across 22 top generalist journals (SL&M = Philosophy of Science, Logic and Mathematics).</p>
+
 How unusual is this? Perhaps the LEMM-ing fields are just more popular than the other sub-field clusters, in general? No. Figure 2 shows their proportions across the remaining 198 (non-top and/or non-generalist) journals in my data. Here, the five sub-field clusters are spread more or less evenly.
 
 One way to quantify how over-represented the LEMM-ing fields are is to calculate their representativeness ratio R, defined as the propotion of LEM&M articles in the top generalist journals divided by the proportion of LEM&M articles in other philosophy journals. R > 1 indicates over-representation; R < 1 indicates under-representation. The table below shows R for philosophy's five main sub-field clusters.
