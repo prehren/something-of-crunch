@@ -3,6 +3,48 @@ title: "Publishing Trends: The End of History?"
 date: 2023-12-12
 ---
 
+<style>
+html, body { background-color: white; font-family:Arial,Helvetica,sans-serif; font-size:12px }
+table { border-collapse:collapse; border:none; }
+caption { font-weight: bold; text-align:left; }
+td {  }
+.thead { border-top: double; text-align:center; font-style:normal; font-weight:bold; padding:0.2cm; }
+.tdata { padding:0.2cm; text-align:left; vertical-align:top; }
+.arc { background-color:#f2f2f2; }
+.summary { padding-top:0.1cm; padding-bottom:0.1cm; }
+.summarydata { text-align:left; }
+.fixedparts { font-weight:bold; text-align:left; }
+.randomparts { font-weight:bold; text-align:left; padding-top:.8em; }
+.zeroparts { font-weight:bold; text-align:left; padding-top:.8em; }
+.simplexparts { font-weight:bold; text-align:left; padding-top:.8em; }
+.lasttablerow { border-bottom: double; }
+.firsttablerow {  }
+.firstsumrow { border-top:1px solid; }
+.labelcellborder { border-bottom:1px solid; }
+.depvarhead { text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal; }
+.depvarheadnodv { border-top: double; text-align:center; border-bottom:1px solid; font-style:italic; font-weight:normal; }
+.leftalign { text-align:left; }
+.centeralign { text-align:center; }
+.firsttablecol { text-align:left; }
+.footnote { font-style:italic; border-top:double black; text-align:right; }
+.subtitle { font-weight: normal; }
+.modelcolumn1 {  }
+.modelcolumn2 {  }
+.modelcolumn3 {  }
+.modelcolumn4 {  }
+.modelcolumn5 {  }
+.modelcolumn6 {  }
+.modelcolumn7 {  }
+.col1 {  }
+.col2 {  }
+.col3 {  }
+.col4 {  }
+.col5 {  }
+.col6 {  }
+</style>
+
+<body>
+  
 Philosophy, like any other academic disciplines, goes through fashions: different sub-fields receive different amounts of attention at different points in time. I thought it would be fun to try and chart some of these developments. In this post, I show that articles on the history of philosophy used to be much more common in philosophy's top journals than they are today.
 
 I'm again using the dataset described in my [last post](https://prehren.github.io/something-of-crunch/2023/12/11/generalist-journals.html) (meta-data on 103,595 articles published between 1975 and 2021 in one of 223 journals). To start, Figure 1 shows the journal average proportion of articles from each of PhilPapers’ five major sub-field clusters since 1975 in 22 top generalist philosophy journals (for more information, see [here](https://prehren.github.io/something-of-crunch/2023/12/11/generalist-journals.html)). By journal average, I mean that I first calculated the proportion of articles for each journal seperately, and then averaged these values.
@@ -91,3 +133,5 @@ From Figure 3, it looks like there has indeed been an increase in the proportion
 </table>
 
 Unlike year, the proportion of specialist history journals does not significantly predict the proportion of HoWP articles in philosophy's top generalist journals. Therefore, it doesn't look like historians of philosophy shifting away from publishing in top generalist journals in favor of new specialist journals well explains HoWP's decline in these journals.
+
+</body>
