@@ -2,4 +2,4 @@
 title: Welcome to my blog
 ---
 
-**WEBSITE TITLE**
+**SOMETHING OF CRUNCH**
