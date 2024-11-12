@@ -29,65 +29,6 @@ To identify specialist history journals, I calculated the proportion of HoWP art
 
 From Figure 3, it looks like there has indeed been an increase in the proportion of specialist history of philosophy journals since the mid 2000s (though note the range of the 95% confidence intervals shown in the figure). However, the proportion of HoWP articles has been on the decline in the top generalist journals for much longer than the mid 2000s (see, Figure 1). Can an increase in the number of specialist outlets for history of philosophy articles still explain (some of) this decline? To investigate this, I used a logistic mixed-effects regression model, predicting the proportion of HoWP articles in the top generalist journals by year and the proportion of specialist history journals. The model also included random intercepts and slopes for journal. The table below shows the results.
 
-<table style="border-collapse: collapse; width: auto; table-layout:auto; margin-left:auto;margin-right:auto;">
-<tr>
-  <th class="thead firsttablerow firsttablecol col1">&nbsp;</th>
-  <th colspan="3" class="thead firsttablerow">Prop. of history articles</th>
-</tr>
-<tr>
-  <td class="depvarhead firsttablerow firsttablecol col1">Predictors</td>
-  <td class="depvarhead firsttablerow col2">Odds Ratios</td>
-  <td class="depvarhead firsttablerow col3">CI</td>
-  <td class="depvarhead firsttablerow col4">p</td>
-</tr>
-<tr>
-  <td class="tdata firsttablecol col1">Intercept</td>
-  <td class="tdata centeralign modelcolumn1 col2">0.39</td>
-  <td class="tdata centeralign modelcolumn1 col3">0.27&nbsp;&ndash;&nbsp;0.55</td>
-  <td class="tdata centeralign modelcolumn1 col4"><strong>&lt;0.001</strong></td>
-</tr>
-<tr>
-  <td class="tdata firsttablecol col1">Year</td>
-  <td class="tdata centeralign modelcolumn1 col2">0.97</td>
-  <td class="tdata centeralign modelcolumn1 col3">0.96&nbsp;&ndash;&nbsp;0.97</td>
-  <td class="tdata centeralign modelcolumn1 col4"><strong>&lt;0.001</strong></td>
-</tr>
-<tr>
-  <td class="tdata firsttablecol col1">Prop. of specialist journals</td>
-  <td class="tdata centeralign modelcolumn1 col2">0.35</td>
-  <td class="tdata centeralign modelcolumn1 col3">0.12&nbsp;&ndash;&nbsp;1.04</td>
-  <td class="tdata centeralign modelcolumn1 col4">0.059</td>
-</tr>
-<tr>
-  <td colspan="4" class="randomparts">Random Effects</td>
-</tr>
-<tr>
-  <td class="tdata leftalign summary">&sigma;<sup>2</sup></td>
-  <td class="tdata summary summarydata" colspan="3">3.29</td>
-</tr>
-<tr>
-  <td class="tdata leftalign summary">&tau;<sub>00</sub> <sub>Journal</sub></td>
-  <td class="tdata summary summarydata" colspan="3">0.34</td>
-<tr>
-  <td class="tdata leftalign summary">&tau;<sub>11</sub> <sub>Journal.Year</sub></td>
-  <td class="tdata summary summarydata" colspan="3">0.00</td>
-<tr>
-  <td class="tdata leftalign summary">&rho;<sub>01</sub> <sub>Journal</sub></td>
-  <td class="tdata summary summarydata" colspan="3">-0.22</td>
-<tr>
-  <td class="tdata leftalign summary">ICC</td>
-  <td class="tdata summary summarydata" colspan="3">0.11</td>
-<tr>
-  <td class="tdata leftalign summary">N <sub>Journal</sub></td>
-  <td class="tdata summary summarydata" colspan="3">22</td>
-<tr>
-  <td class="tdata leftalign summary firstsumrow">Observations</td>
-  <td class="tdata summary summarydata firstsumrow" colspan="3">649</td>
-</tr>
-<tr>
-  <td class="tdata leftalign summary">Marginal R<sup>2</sup> / Conditional R<sup>2</sup></td>
-  <td class="tdata summary summarydata" colspan="3">0.055 / 0.155</td>
-</tr>
-</table>
+[INSERT TABLE]
 
 Unlike year, the proportion of specialist history journals does not significantly predict the proportion of HoWP articles in philosophy's top generalist journals. Therefore, it doesn't look like historians of philosophy shifting away from publishing in top generalist journals in favor of new specialist journals well explains HoWP's decline in these journals.
