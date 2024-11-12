@@ -29,7 +29,7 @@ To identify specialist history journals, I calculated the proportion of HoWP art
 
 From Figure 3, it looks like there has indeed been an increase in the proportion of specialist history of philosophy journals since the mid 2000s (though note the range of the 95% confidence intervals shown in the figure). However, the proportion of HoWP articles has been on the decline in the top generalist journals for much longer than the mid 2000s (see, Figure 1). Can an increase in the number of specialist outlets for history of philosophy articles still explain (some of) this decline? To investigate this, I used a logistic mixed-effects regression model, predicting the proportion of HoWP articles in the top generalist journals by year and the proportion of specialist history journals. The model also included random intercepts and slopes for journal. The table below shows the results.
 
-<table>
+<table style="border-collapse: collapse; width: auto; table-layout:auto; margin-left:auto;margin-right:auto;">
   <tr>
     <th class="thead firsttablecol">&nbsp;</th>
     <th colspan="3" class="thead">Prop. of history articles</th>
@@ -45,19 +45,19 @@ From Figure 3, it looks like there has indeed been an increase in the proportion
     <td class="tdata centeralign">0.39</td>
     <td class="tdata centeralign">0.27&nbsp;&ndash;&nbsp;0.55</td>
     <td class="tdata centeralign col4"><strong>&lt;0.001</strong></td>
-</tr>
+  </tr>
   <tr>
     <td class="tdata firsttablecol">Year</td>
     <td class="tdata centeralign">0.97</td>
     <td class="tdata centeralign">0.96&nbsp;&ndash;&nbsp;0.97</td>
     <td class="tdata centeralign col4"><strong>&lt;0.001</strong></td>
-</tr>
+  </tr>
   <tr>
     <td class="tdata firsttablecol">Prop. of specialist journals</td>
     <td class="tdata centeralign">0.35</td>
     <td class="tdata centeralign">0.12&nbsp;&ndash;&nbsp;1.04</td>
     <td class="tdata centeralign col4">0.059</td>
-</tr>
+  </tr>
   <tr>
     <td colspan="4" class="randomparts">Random Effects</td>
   </tr>
