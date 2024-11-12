@@ -7,6 +7,10 @@ Philosophy, like any other academic disciplines, goes through fashions: differen
 
 I'm again using the dataset described in my [last post](https://prehren.github.io/something-of-crunch/2023/12/11/generalist-journals.html) (meta-data on 103,595 articles published between 1975 and 2021 in one of 223 journals). To start, Figure 1 shows the journal average proportion of articles from each of PhilPapers’ five major sub-field clusters since 1975 in 22 top generalist philosophy journals (for more information, see [here](https://prehren.github.io/something-of-crunch/2023/12/11/generalist-journals.html)). By journal average, I mean that I first calculated the proportion of articles for each journal seperately, and then averaged these values.
 
+![Figure 1. Journal average proportion of articles from each of PhilPapers’ five major sub-field clusters since 1975 in 22 top generalist philosophy journal (SL&M = Philosophy of Science, Logic and Mathematics).](https://raw.githubusercontent.com/prehren/something-of-crunch/71c6d36bf8de523c44411387ea3607a661e1ce1b/assets/images/2023-12-11/fig1.png)
+<p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 1. Journal average proportion of articles from each of PhilPapers’ five major sub-field clusters since 1975 in 22 top generalist philosophy journal (SL&M = Philosophy of Science, Logic and Mathematics).</p>
+<br>
+
 We see that over the last ~50 years, the journal average of History of Western Philosophy (HoWP) has declined quite dramatically. In 1975, HoWP articles made up on average 21.6% of all articles in philosophy's top generalist journals. By 2021, this percentage had more than halved, to 10.8%.
 
 Do we find a similar trend in other (non-top and/or non-generalist) philosophy journals? No.
