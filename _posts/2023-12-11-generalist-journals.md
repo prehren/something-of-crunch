@@ -17,7 +17,7 @@ For each of the 22 LeiterReports journals, I calculated the proportion of articl
 
 ![Figure 1. Mean proportion of articles from philosophy's five major sub-fields across across 22 top generalist journals (SL&M = Philosophy of Science, Logic and Mathematics).](https://raw.githubusercontent.com/prehren/something-of-crunch/71c6d36bf8de523c44411387ea3607a661e1ce1b/assets/images/2023-12-11/fig1.png)
 
-<p style="text-align:center;">Figure 1. Mean proportion of articles from philosophy's five major sub-fields across across 22 top generalist journals (SL&M = Philosophy of Science, Logic and Mathematics).</p>
+<p style="text-align:center; font-size: 0.75em;">Figure 1. Mean proportion of articles from philosophy's five major sub-fields across across 22 top generalist journals (SL&M = Philosophy of Science, Logic and Mathematics).</p>
 
 How unusual is this? Perhaps the LEMM-ing fields are just more popular than the other sub-field clusters, in general? No. Figure 2 shows their proportions across the remaining 198 (non-top and/or non-generalist) journals in my data. Here, the five sub-field clusters are spread more or less evenly.
 
