@@ -1,5 +1,3 @@
 ---
-title: Welcome to my blog
+title: Something Of Crunch
 ---
-
-**SOMETHING OF CRUNCH**
