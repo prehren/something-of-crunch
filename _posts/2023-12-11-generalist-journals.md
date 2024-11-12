@@ -62,7 +62,7 @@ One way to quantify *how* over-represented the LEMM-ing fields are is to calcula
 
 The LEMM-ing fields' R comes out as 2.39—in other words, the proportion of LEM&M articles in the the top generalist journals is more than twice that of LEM&M articles in other journals. In contrast, the other four sub-field clusters all have Rs less than one and so are under-represented (compared to the porportions shown in Figure 2), though not all to the same extent. In particular, History of Western Philosophy and Philosophical Traditions fare quite a lot worse than Value Theory and SL&M. History of Western Philosophy articles are about three times less common in the top generalist journals than in other journals, while Philosophical Traditions articles are almost 17 times less common in the top generalist journals than in other journals.
 
-![Figure 3. Proportion of articles from philosophy's five major sub-fields in 22 top generalist journals.](https://raw.githubusercontent.com/prehren/something-of-crunch/refs/heads/main/assets/images/2023-12-11/fig3.png)
+![Figure 3. Proportion of articles from philosophy's five major sub-fields in 22 top generalist journals.](assets/images/2023-12-11/fig3.png)
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 3. Proportion of articles from philosophy's five major sub-fields in 22 top generalist journals.</p>
 <br>
 
