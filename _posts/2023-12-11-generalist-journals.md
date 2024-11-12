@@ -1,6 +1,5 @@
 ---
 title: "How Generalist are Philosophy's Top Generalist Journals?"
-date: 2023-12-11
 ---
 
 I've often heard the complaint that philosophy's top generalist journals really are LEMM-ings in disguise. That is, instead of being open to articles from all or at least most areas of philosophy, their output is skewed towards the so-called LEMM-ing fields (language, epistemology, mind and metaphysics).
