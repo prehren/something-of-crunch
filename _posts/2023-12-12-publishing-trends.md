@@ -60,7 +60,6 @@ From Figure 3, it looks like there has indeed been an increase in the proportion
   <tr>
     <td colspan="4" class="randomparts">Random Effects</td>
   </tr>
-
   <tr>
     <td class="tdata leftalign summary">&sigma;<sup>2</sup></td>
     <td class="tdata summary summarydata" colspan="3">3.29</td>
