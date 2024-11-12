@@ -3,6 +3,82 @@ title: "Publishing Trends: The End of History?"
 date: 2023-12-12
 ---
 
+<style>
+  table {
+    border-collapse: collapse;
+    border: none; 
+  }
+  .thead {
+    border-top: double;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    padding: 0.2cm;
+  }
+  .tdata {
+    padding: 0.2cm;
+    text-align: left;
+    vertical-align: top;
+  }
+  .summary {
+    padding-top: 0.1cm;
+    padding-bottom: 0.1cm;
+  }
+  .summarydata {
+    text-align: left;
+  }
+  .fixedparts {
+    font-weight: bold;
+    text-align: left;
+  }
+  .randomparts {
+    font-weight: bold;
+    text-align: left;
+    padding-top: .8em;
+  }
+  .zeroparts {
+    font-weight: bold;
+    text-align: left;
+    padding-top: .8em;
+  }
+  .simplexparts {
+    font-weight: bold;
+    text-align: left;
+    padding-top: .8em;
+  }
+  .lasttablerow {
+    border-bottom:  double;
+  }
+  .firstsumrow {
+    border-top: 1px solid;
+  }
+  .labelcellborder {
+    border-bottom: 1px solid;
+  }
+  .depvarhead {
+    text-align: center;
+    border-bottom: 1px solid;
+    font-style: italic;
+    font-weight: normal;
+  }
+  .depvarheadnodv {
+    border-top:  double;
+    text-align: center;
+    border-bottom: 1px solid;
+    font-style: italic;
+    font-weight: normal;
+  }
+  .leftalign {
+    text-align: left;
+  }
+  .centeralign {
+    text-align: center;
+  }
+  .firsttablecol {
+    text-align: left;
+  }
+</style>
+
 Philosophy, like any other academic disciplines, goes through fashions: different sub-fields receive different amounts of attention at different points in time. I thought it would be fun to try and chart some of these developments. In this post, I show that articles on the history of philosophy used to be much more common in philosophy's top journals than they are today.
 
 I'm again using the dataset described in my [last post](https://prehren.github.io/something-of-crunch/2023/12/11/generalist-journals.html) (meta-data on 103,595 articles published between 1975 and 2021 in one of 223 journals). To start, Figure 1 shows the journal average proportion of articles from each of PhilPapers’ five major sub-field clusters since 1975 in 22 top generalist philosophy journals (for more information, see [here](https://prehren.github.io/something-of-crunch/2023/12/11/generalist-journals.html)). By journal average, I mean that I first calculated the proportion of articles for each journal seperately, and then averaged these values.
@@ -28,7 +104,66 @@ To identify specialist history journals, I calculated the proportion of HoWP art
 <br>
 
 From Figure 3, it looks like there has indeed been an increase in the proportion of specialist history of philosophy journals since the mid 2000s (though note the range of the 95% confidence intervals shown in the figure). However, the proportion of HoWP articles has been on the decline in the top generalist journals for much longer than the mid 2000s (see, Figure 1). Can an increase in the number of specialist outlets for history of philosophy articles still explain (some of) this decline? To investigate this, I used a logistic mixed-effects regression model, predicting the proportion of HoWP articles in the top generalist journals by year and the proportion of specialist history journals. The model also included random intercepts and slopes for journal. The table below shows the results.
+<table>
+  <tr>
+    <th class="thead firsttablecol">&nbsp;</th>
+    <th colspan="3" class="thead">Prop. of history articles</th>
+  </tr>
+  <tr>
+    <td class="depvarhead firsttablecol">Predictors</td>
+    <td class="depvarhead">Odds Ratios</td>
+    <td class="depvarhead">CI</td>
+    <td class="depvarhead">p</td>
+  </tr>
+  <tr>
+    <td class="tdata firsttablecol">Intercept</td>
+    <td class="tdata centeralign">0.39</td>
+    <td class="tdata centeralign">0.27&nbsp;&ndash;&nbsp;0.55</td>
+    <td class="tdata centeralign col4"><strong>&lt;0.001</strong></td>
+</tr>
+  <tr>
+    <td class="tdata firsttablecol">Year</td>
+    <td class="tdata centeralign">0.97</td>
+    <td class="tdata centeralign">0.96&nbsp;&ndash;&nbsp;0.97</td>
+    <td class="tdata centeralign col4"><strong>&lt;0.001</strong></td>
+</tr>
+  <tr>
+    <td class="tdata firsttablecol">Prop. of specialist journals</td>
+    <td class="tdata centeralign">0.35</td>
+    <td class="tdata centeralign">0.12&nbsp;&ndash;&nbsp;1.04</td>
+    <td class="tdata centeralign col4">0.059</td>
+</tr>
+  <tr>
+    <td colspan="4" class="randomparts">Random Effects</td>
+  </tr>
 
-[INSERT TABLE]
+  <tr>
+    <td class="tdata leftalign summary">&sigma;<sup>2</sup></td>
+    <td class="tdata summary summarydata" colspan="3">3.29</td>
+  </tr>
+  <tr>
+    <td class="tdata leftalign summary">&tau;<sub>00</sub> <sub>Journal</sub></td>
+    <td class="tdata summary summarydata" colspan="3">0.34</td>
+  <tr>
+    <td class="tdata leftalign summary">&tau;<sub>11</sub> <sub>Journal.Year</sub></td>
+    <td class="tdata summary summarydata" colspan="3">0.00</td>
+  <tr>
+    <td class="tdata leftalign summary">&rho;<sub>01</sub> <sub>Journal</sub></td>
+    <td class="tdata summary summarydata" colspan="3">-0.22</td>
+  <tr>
+    <td class="tdata leftalign summary">ICC</td>
+    <td class="tdata summary summarydata" colspan="3">0.11</td>
+  <tr>
+    <td class="tdata leftalign summary">N <sub>Journal</sub></td>
+    <td class="tdata summary summarydata" colspan="3">22</td>
+  <tr>
+    <td class="tdata leftalign summary firstsumrow">Observations</td>
+    <td class="tdata summary summarydata firstsumrow" colspan="3">649</td>
+  </tr>
+  <tr>
+    <td class="tdata leftalign summary">Marginal R<sup>2</sup> / Conditional R<sup>2</sup></td>
+    <td class="tdata summary summarydata" colspan="3">0.055 / 0.155</td>
+  </tr>
+</table>
 
 Unlike year, the proportion of specialist history journals does not significantly predict the proportion of HoWP articles in philosophy's top generalist journals. Therefore, it doesn't look like historians of philosophy shifting away from publishing in top generalist journals in favor of new specialist journals well explains HoWP's decline in these journals.
