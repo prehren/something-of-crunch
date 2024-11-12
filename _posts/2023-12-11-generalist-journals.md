@@ -1,6 +1,6 @@
 ---
 title: "How Generalist are Philosophy's Top Generalist Journals?"
-date: 2024-11-12
+date: 2023-12-11
 ---
 
 I've often heard the complaint that philosophy's top generalist journals really are LEMM-ings in disguise. That is, instead of being open to articles from all or at least most areas of philosophy, their output is skewed towards the so-called LEMM-ing fields (language, epistemology, mind and metaphysics).
@@ -15,7 +15,7 @@ Next, I needed a list of top generalist philosophy journals. I used LeiterReport
 
 For each of the 22 LeiterReports journals, I calculated the proportion of articles published in the last 10 years from each of the five major sub-field clusters listed on PhilPapers. If an article was assigned to more than one sub-field cluster, I included it more than once. Figure 1 shows these proportions averaged across journals. The LEMM-ing fields indeed dominate: The share of LEM&M articles is larger than the share of articles from the other four sub-field clusters combined (56.1% vs. 43.9%).
 
-![Figure 1](/docs/assets/fig1.png)
+![Figure 1](/_assets/post1/fig1.png)
 
 How unusual is this? Perhaps the LEMM-ing fields are just more popular than the other sub-field clusters, in general? No. Figure 2 shows their proportions across the remaining 198 (non-top and/or non-generalist) journals in my data. Here, the five sub-field clusters are spread more or less evenly.
 
