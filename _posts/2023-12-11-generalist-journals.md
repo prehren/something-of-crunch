@@ -27,7 +27,7 @@ How unusual is this? Perhaps the LEMM-ing fields are just more popular than the 
 
 One way to quantify *how* over-represented the LEMM-ing fields are is to calculate their representativeness ratio *R*, defined as the propotion of LEM&M articles in the top generalist journals divided by the proportion of LEM&M articles in other philosophy journals. _R_ > 1 indicates over-representation; _R_ < 1 indicates under-representation. The table below shows _R_ for philosophy's five main sub-field clusters.
 
-<table>
+<table style="border-collapse: collapse; width: auto; table-layout:auto; margin-left:auto;margin-right:auto;">
 <thead>
 <tr class="header">
 <th align="left">Sub-field cluster</th>
