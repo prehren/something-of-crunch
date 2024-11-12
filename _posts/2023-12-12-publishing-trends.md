@@ -28,6 +28,7 @@ To identify specialist history journals, I calculated the proportion of HoWP art
 <br>
 
 From Figure 3, it looks like there has indeed been an increase in the proportion of specialist history of philosophy journals since the mid 2000s (though note the range of the 95% confidence intervals shown in the figure). However, the proportion of HoWP articles has been on the decline in the top generalist journals for much longer than the mid 2000s (see, Figure 1). Can an increase in the number of specialist outlets for history of philosophy articles still explain (some of) this decline? To investigate this, I used a logistic mixed-effects regression model, predicting the proportion of HoWP articles in the top generalist journals by year and the proportion of specialist history journals. The model also included random intercepts and slopes for journal. The table below shows the results.
+
 <table>
   <tr>
     <th class="thead firsttablecol">&nbsp;</th>
