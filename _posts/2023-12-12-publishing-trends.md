@@ -15,7 +15,7 @@ We see that over the last ~50 years, the journal average of History of Western P
 
 Do we find a similar trend in other (non-top and/or non-generalist) philosophy journals? No.
 
-![Figure 2. Journal average proportion of articles from each of PhilPapers’ five major sub-field clusters since 1975 in 198 non-top and/or non-generalist philosophy journals.]({{site.url}}/something-of-crunch/assets/images/2023-12-12/fig2.png)
+![Figure 2. Journal average proportion of articles from each of PhilPapers’ five major sub-field clusters since 1975 in 198 non-top and/or non-generalist philosophy journals.]({{site.url}}/something-of-crunch/assets/images/2023-12-12/fig2.png){: width="75%"}
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 2. Journal average proportion of articles from each of PhilPapers’ five major sub-field clusters since 1975 in 198 non-top and/or non-generalist philosophy journals.</p>
 <br>
 
@@ -23,7 +23,7 @@ What happened to all the work on the history of philosophy that used to be publi
 
 To identify specialist history journals, I calculated the proportion of HoWP articles published in two well-known history journals, the _British Journal for the History of Philosophy_ and the _Journal of the History of Philosophy_. On average, these journals publish 66.8% and 69.8% of HoWP articles each year, respectively. Based on these values, I count a journal as a specialist history of philosophy journal (during a given year) if it published 65% or more HoWP articles (in that year). Figure 3 shows the proportion of specialist history journals (so defined) for each year since 1975.
 
-![Figure 3. Proportion of specialist history of philosophy journals over time. Errorbars show 95% Wilson CIs.]({{site.url}}/something-of-crunch/assets/images/2023-12-12/fig3.png)
+![Figure 3. Proportion of specialist history of philosophy journals over time. Errorbars show 95% Wilson CIs.]({{site.url}}/something-of-crunch/assets/images/2023-12-12/fig3.png){: width="75%"}
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 3. Proportion of specialist history of philosophy journals over time. Errorbars show 95% Wilson CIs.</p>
 <br>
 
