@@ -1,2 +1,3 @@
-theme: minima
-title: "SomethingOfCrunch"
+theme: jekyll-theme-minimal
+title: SomethingOfCrunch
+description: A Collection of Scraps
