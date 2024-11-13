@@ -58,7 +58,7 @@ Here are the top 500 (mean
 12. J Habermas (0.242%)
 13. Plato (0.216%)
 14. D Hume (0.21%)
-W Quine (0.21%)
+    W Quine (0.21%)
 16. J Rawls (0.205%)
 17. K Marx (0.202%)
 18. M Merleau Ponty (0.186%)
