@@ -3,166 +3,46 @@ title: "Most Cited Philosophy Authors on the WoS"
 date: 2024-11-13
 ---
 
-In some disciplines (e.g., psychology; the natural sciences), papers commonly have more than one author. Not so much in philosophy. In 2021, 83.5% of philosophy articles were single-authored, 12.2% of philosophy were co-authored and only 4.3% had more than two authors (see [here](https://prehren.github.io/something-of-crunch/2023/12/11/generalist-journals.html) for a description of the data these numbers are based on).
+On his [blog](https://schwitzsplinters.blogspot.com/2024/08/the-378-most-cited-contemporary-authors.html), Eric Schwitzgebel has posted a list of the most cited authors in philosophy according to the SEP. Since I have been playing around with citation data from the Web of Science, I figured it might be interesting to do something similar.
 
-I find this a little odd, given how often I’ve heard it stressed that bouncing one’s ideas of other (critical) philosophers and honestly engaging with their feedback and criticism is a crucial part of doing philosophy well. If so, then wouldn’t it often make sense to just write papers with other philosophers?
+The WoS provides 'Cited References' for many of its entries. As of Sept 2024 (when I downloaded the data), the WoS indexed around 540,000 articles in the category Philosophy (English: ~410,000; French: ~36,000; German: ~25,000; Spanish: ~16,000; Italian: ~13,000; Russian: ~12,000; everything else: < 10,000). Of these articles, around 495,000 had at least one cited item associated with them, for a total of around 9 million references.
 
-A while ago, someone at a workshop I was at suggested that philosophy has in fact become more collaborative in recent decades. Is this true? In Figure 1, I plot the proportions of philosophy articles with 1, 2, 3, 4 and 5 or more authors since 1975.
+Here is a random sample of 10 references:
 
-![Figure 1. Proportion of philosophy articles with 1, 2, 3, 4 and 5 or more authors since 1975.]({{site.url}}/something-of-crunch/assets/images/2023-12-20/figure1.png){: width="100%"}
-<p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 1. Proportion of philosophy articles with 1, 2, 3, 4 and 5 or more authors since 1975.</p>
-<br>
+- Field Hartry, 1972, Journal of Philosophy, V69, P347.
+- DEP HLTH, 1895, REP MUN LAB DEP HLTH, P178.
+- FERRARA Alessandro, 1997, ETIKA AUTONOMIE AUTE.
+- BOLZANO B, WISSENSCHAFTSLEHRE.
+- Aristotle, POLITICS.
+- Zalta E., 2020, STANFORD ENCY PHILOS.
+- PFETSCH F, UNPUBLISHED MANUSCRI.
+- McCarthy E.Doyle., 1985, History of Sociology, V5, P21.
+- Chisholm R. M., 1957, Perceiving: A philosophical study.
+- BOLLNOW OF, 1997, HERMENEUUSCHE PHILOS, P323.
 
-I also calculated the journal average number of authors for articles published since 1975. Figure 2 shows the results, along with the range (that is, the range of values for the mean number of authors in all journals per year), standard deviation and 95% confidence intervals.
+While there is not a huge amount of information here (e.g., no article titles; no publisher information; no editors), almost all cited items include author names (or rather: the name of the first author—my sense is that co-authors are generally omitted). That's good. What is not so great is that for most authors, we only get initials, not full first names. Yet many first initial-last name combinations are going to be shared by lots of authors. To get around this problem (or at least make it much more palatable), I decided only to keep references with at least one full first name (defined as an upper-case letter followed by at least one lower-case letters), or no first names at all (in order not to loose authors like Aristotle, Plato, Plutarch, Averroes, etc.). 
 
-![Figure 2. Journal average number of authors since 1975.]({{site.url}}/something-of-crunch/assets/images/2023-12-20/figure2.png)
-<p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 2. Journal average number of authors since 1975.</p>
-<br>
+This introduces a problem, however. Consider Aristotle. Aristotle virtually always get referenced as 'Aristotle.' So my filtered dataset will include (almost) all references to Aristotle's works. Compare that to an author like David Lewis, who either gets referenced as 'David Lewis' or 'D. Lewis.' My dataset will only contain instances of the first case, but not instances of the second case. As a result, Aristotle's citation count will be (quite dramatically) inflated compared to David Lewis' citation count.
 
-Even though the vast majority of philosophy articles today are still single-authored, philosophy has indeed become somewhat more collaborative (in terms of the number of authors on published philosophy papers). The percentage of single-authored philosophy articles has fallen from 96.5% to 83.5%. Likewise, the journal average number of authors has increased since 1975, from M = 1.04 to M = 1.21.
+To address this issue, we need a way to scale Aristotle's citation count down to what it would have been if Aristotle did have a first name (in which case the filtered dataset would have only contained references to 'Chad Aristotle,' not 'C. Aristotle.') To achieve this, I'll assume that all authors share roughly the same probability of being referred to with their full first name(s) vs. their initial(s). 
 
-What accounts for/explains this increase? Here are a few ideas:
+Some of the journals the WoS lists under Philosophy strike me as questionable. For instance: Are the _Nursing History Review_, the _Journal of Medical Biography_, the _Journal for the History of Astronomy_ or _Engineering Studies_ really philosophy journals? I think not. As a result, I decided to remove all journals from the dataset that are not also indexed on PhilPapers. This method isn't perfect, of course, but I think it is good enough.
 
-1. _Interdisciplinary journals:_ The increase in the number of co-authors on philosophy articles since 1975 is due to work published in interdisciplinary journals rather than in ‘pure’ philosophy journals.
-2. _Journals outside the mainstream:_ The increase in the number of co-authors on philosophy articles since 1975 is not a phenomenon of mainstream academic philosophy.
-3. _Empirical research:_ The increase in the number of co-authors on philosophy articles since 1975 is owed to the fact that philosophy journals are increasingly publishing original empirical research.
-4. _Different sub-fields of philosophy:_ Different sub-fields of philosophy have different norms when it comes to co-authorship, and so the increase in the number of co-authors on philosophy articles since 1975 reflects only some sub-fields, not all of philosophy.
+After these (and some other, more boring exclusions having to do with missing data), I was  left with a final dataset containing ~1.6 million references from articles published in 269 journals between 1975 and 2024.
 
-How to investigate these suggestions? 1., 2. and 4. are fairly straight-forward. For 1., I used the [Web of Science’s research areas](https://images.webofknowledge.com/images/help/WOS/hp_research_areas_easca.html) to divide journals into _pure philosophy_ and _interdisciplinary_. A journal is a pure philosophy journals if Philosophy is given as its one and only research area. All other journals, I count as interdisciplinary (note that all of these journals still have Philosophy listed as one of their research areas).
+There are different ways to quantify _most cited author_. One is to just count up citations. I don't think that is a particularly helpful approach, however, because (a) philosophers today cite a lot more stuff than did philosophers 50 years ago and (b) many more philosophy articles get published today than did 50 years ago. This means that raw citation counts as a measure of influence are biased (heavily) in favor of recent citations.
 
-For 2., I needed a list of well-regarded, mainstream philosophy journals. I used a recent meta-ranking (De Bruin 2023) that lists 40 journals (four of these journals are not indexed on the WoS and so I could not include them). I realize that this list is not definitive, but it’s the best I could find.
+I instead chose to go with proportions. Note that, by itself, this doesn't solve (a) and (b). To illustrate [I'll focus on (a), but the problem with (b) is analogous]: Suppose we are looking at two years, 1990 and 2020, for one journal A. In 1990, A published 10 articles, while in 2020, it published 100 articles. Suppose further that articles in 1990 and 2020 cite about the same number of references (say, 10). If an author was very influential in the pages of A in 1990 (say, 10% of all citations were to this author's work) but no longer that influential in 2020 (say, 1%), then we get an overall proportion of citations to this author in A of ~2%. If the roles of 1990 and 2020 had been reversed, however, then this overall proportion would have been ~9%. Yet it looks like this differences is just an artifact of the fact that A published fewer articles in 1990 than in 2020.
 
-For 4., I used the five major sub-field clusters listed on [PhilPapers](https://philpapers.org/categories.pl). 77.5% of the articles in my dataset had at least one sub-field cluster listed.
+To avoid (a) and (b), I divided my data into time bins (I chose five years), calculated the proportion of citations received by a given author in each bin separately, and only then calculated the mean across all of these bins. I also did the same thing for journals; otherwise, the results would be biased towards influence in journals that publish more articles and/or have higher average citation rates.
 
-Figure 3 shows the average number of authors since 1975 broken up by sub-field cluster (sub-figure A), journal ranking (mainstream vs. other; B) and purity (C).
+[TOP LIST]
 
-![Figure 3. Average number of authors over time by sub-field cluster (A), journal ranking (B) and purity (C); shaded areas show 95% confidence intervals.]({{site.url}}/something-of-crunch/assets/images/2023-12-20/figure3.png)
-<p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 3. Average number of authors over time by sub-field cluster (A), journal ranking (B) and purity (C); shaded areas show 95% confidence intervals.</p>
-<br>
+Here are a few observations: First, while I am of course aware that Aristotle and Plato are ...like, important, I still find it pretty incredible that they come in first and third after having been dead for more than 2000 years. Second, there is a sharp drop-off after the first four authors (Aristotle, Kant, Plato, Heidegger): Their cumulative score is roughly equal to the cumulative score of the next fourteen authors (Wittgenstein to Habermas). Big Four? Third, a number of people in Schwitzgebel's comments asked questions/expressed dismay about the low ranks of various (European) authors. On the current list, these authors tend to rank much higher: Derrida (ranked #9), Foucault (#21), Merleau-Ponty (#23), Gadamer (#50), Adorno (#65) and Cavell (#90), for example, are all in the top 100.
 
-All three sub-figures suggest differences in trajectories between category levels. To statistically test for these (potential) differences, I used a negative binomial model (to account for over-dispersion) with the number of co-authors (i.e., the number of authors minus one) as the outcome and year, and sub-field cluster, journal ranking and journal purity, and their interactions with year as predictors. Here are the results:
+Schwitzgebel makes it clear, of course, that his ranking only captures current influence in 'mainstream Anglophone philosophy,' and so the fact that Derrida, Foucault et al. are not particularly high up on his list is not surprising. The question, then, is: What does the current ranking capture? The answer I think depends a lot on whether the journals in my dataset capture published academic philosophy. he current ranking captures  is not unreasonable to claim that the current ranking is able to capture influence across philosophy more broadly. I will probably make a shiny app that allows people to select which journals they want included an the like, so that people who disagree can puruse the dataset at their own leasure.
 
-<table>
-  <tr>
-    <th class="thead firsttablerow firsttablecol">&nbsp;</th>
-    <th colspan="3" class="thead firsttablerow">Number of co-authors</th>
-  </tr>
-  <tr>
-    <td class="depvarhead firsttablerow firsttablecol">Predictors</td>
-    <td class="depvarhead firsttablerow">IRR</td>
-    <td class="depvarhead firsttablerow">95% CI</td>
-    <td class="depvarhead firsttablerow">p</td>
-  </tr>
-  <tr>
-    <td class="tdata firsttablecol">Intercept</td>
-    <td class="tdata centeralign">0.05</td>
-    <td class="tdata centeralign">0.04&nbsp;&ndash;&nbsp;0.06</td>
-    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
-</tr>
-  <tr>
-    <td class="tdata firsttablecol">Year</td>
-    <td class="tdata centeralign">1.02</td>
-    <td class="tdata centeralign">1.01&nbsp;&ndash;&nbsp;1.03</td>
-    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
-</tr>
-  <tr>
-    <td class="tdata firsttablecol">Purity (Pure philosophy)</td>
-    <td class="tdata centeralign">0.55</td>
-    <td class="tdata centeralign">0.45&nbsp;&ndash;&nbsp;0.66</td>
-    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
-</tr>
-  <tr>
-    <td class="tdata firsttablecol">Mainstream (Other)</td>
-    <td class="tdata centeralign">0.69</td>
-    <td class="tdata centeralign">0.57&nbsp;&ndash;&nbsp;0.84</td>
-    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
-</tr>
-  <tr>
-    <td class="tdata firsttablecol">Sub-field cluster (LEM&M)</td>
-    <td class="tdata centeralign">0.99</td>
-    <td class="tdata centeralign">0.77&nbsp;&ndash;&nbsp;1.27</td>
-    <td class="tdata centeralign">0.957</td>
-</tr>
-  <tr>
-    <td class="tdata firsttablecol">Sub-field cluster (Phil. Trad.)</td>
-    <td class="tdata centeralign">1.12</td>
-    <td class="tdata centeralign">0.81&nbsp;&ndash;&nbsp;1.53</td>
-    <td class="tdata centeralign">0.497</td>
-</tr>
-  <tr>
-    <td class="tdata firsttablecol">Sub-field cluster (SL&M)</td>
-    <td class="tdata centeralign">2.01</td>
-    <td class="tdata centeralign">1.57&nbsp;&ndash;&nbsp;2.57</td>
-    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
-</tr>
-  <tr>
-    <td class="tdata firsttablecol">Year:Sub-field cluster (Value Theory)</td>
-    <td class="tdata centeralign">0.94</td>
-    <td class="tdata centeralign">0.73&nbsp;&ndash;&nbsp;1.21</td>
-    <td class="tdata centeralign">0.646</td>
-</tr>
-  <tr>
-    <td class="tdata firsttablecol">Year:Purity (Pure philosophy)</td>
-    <td class="tdata centeralign">1.00</td>
-    <td class="tdata centeralign">0.99&nbsp;&ndash;&nbsp;1.00</td>
-    <td class="tdata centeralign">0.100</td>
-</tr>
-  <tr>
-    <td class="tdata firsttablecol">Year:Mainstream (Other)</td>
-    <td class="tdata centeralign">1.01</td>
-    <td class="tdata centeralign">1.01&nbsp;&ndash;&nbsp;1.02</td>
-    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
-</tr>
-  <tr>
-    <td class="tdata firsttablecol">Year:Sub-field cluster (LEM&M)</td>
-    <td class="tdata centeralign">1.02</td>
-    <td class="tdata centeralign">1.02&nbsp;&ndash;&nbsp;1.03</td>
-    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
-</tr>
-  <tr>
-    <td class="tdata firsttablecol">Year:Sub-field cluster (Phil. Trad.)</td>
-    <td class="tdata centeralign">0.99</td>
-    <td class="tdata centeralign">0.98&nbsp;&ndash;&nbsp;1.00</td>
-    <td class="tdata centeralign">0.101</td>
-</tr>
-  <tr>
-    <td class="tdata firsttablecol">Year:Sub-field cluster (SL&M)</td>
-    <td class="tdata centeralign">1.01</td>
-    <td class="tdata centeralign">1.01&nbsp;&ndash;&nbsp;1.02</td>
-    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
-</tr>
-  <tr>
-    <td class="tdata firsttablecol">Year:Sub-field cluster (Value Theory)</td>
-    <td class="tdata centeralign">1.04</td>
-    <td class="tdata centeralign">1.03&nbsp;&ndash;&nbsp;1.05</td>
-    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
-</tr>
-  <tr>
-    <td class="tdata leftalign summary firstsumrow">Observations</td>
-    <td class="tdata summary summarydata firstsumrow" colspan="3">98898</td>
-  </tr>
-  <tr>
-    <td class="tdata leftalign summary">R<sup>2</sup> Nagelkerke</td>
-    <td class="tdata summary summarydata" colspan="3">0.193</td>
-  </tr>
-  <tr>
-    <th colspan="4" class="thead firsttablerow"></th>
-  </tr>
-</table>
-
-The model provides evidence for 2. and 4. Year remained an overall significant predictor of the number of co-authors: with ever year, the expected co-author count increased by a factor of 1.02 (while holding all other variables in the model constant). This increase over time was significantly steeper for journals outside of the mainstream compared to mainstream journals and for articles from three of philosophy’s five sub-field clusters (SL&M; LEM&M; Value Theory). In contrast, the interaction between journal purity and year was not significant, and so the model does not provide evidence for explanation 1.
-
-Investigating 3. is a bit more tricky since this requires a way of identifying articles that report original empirical research. I don’t think there is a way to do this reliably based just on the meta-data I have available. However, for a different project, I had already downloaded the full texts of all original research articles (18,442 in total) published between 1971 and 2021 in six journals (_Australasian Journal of Philosophy_; _Analysis_; _Mind_; _Noûs_; _Philosophical Studies_; _Synthese_). Within these texts, I searched for the strings “(our OR my) AND (result[s] OR finding[s])” and “(our OR my) AND (study OR studies OR experiment[s])”, reasoning that if a text included both, it likely reported original empirical results. This is of course not definitive, but I think it generates a reasonable guess. Figure 4 shows the percentage of articles (in the six journals listed above) since 1975 that reported original empirical research (inset figure) and the average number of authors since 1975 on articles that reported empirical research vs. regular philosophy articles (main figure).
-
-![Figure 4. Percentage of articles since 1975 in six journals that reported empirical research (inset figure); average number of authors since 1975 on articles that reported empirical research vs. regular philosophy articles (main figure). Shaded areas show 95% CI (note that before 2001-5, there were not enough articles in the dataset to estimate these).]({{site.url}}/something-of-crunch/assets/images/2023-12-20/figure4.png)
-<p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 4. Percentage of articles since 1975 in six journals that reported empirical research (inset figure); average number of authors since 1975 on articles that reported empirical research vs. regular philosophy articles (main figure). Shaded areas show 95% CI (note that before 2001-5, there were not enough articles in the dataset to estimate these).</p>
-<br>
-
-The percentage of philosophy articles that report original empirical research (as estimated by my method) has risen substantially since 1975 and in particular since around 2000. Moreover, as one would expect, the average number of authors on these articles is both much larger in general than the average number of authors on ‘regular’ philosophy articles and has also risen steeply since 1975. This provides some evidence for explanation 3. (though note that the average number of authors has also been increasing over time for regular articles, so 3. does not provide a full explanation).
-
-**References**
-
-<div style="text-indent: -2em; padding-left: 2em;">De Bruin, Boudewijn. 2023. “Ranking Philosophy Journals: A Meta-Ranking and a New Survey Ranking.” <em>Synthese</em> 202 (6): 188. https://doi.org/10.1007/s11229-023-04342-9.</div>
+Since this data is longitudinal (1975-2024), I also looked at . I made the graph interactive because it is a mess otherwise.
 
 
 
