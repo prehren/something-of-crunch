@@ -162,7 +162,7 @@ The percentage of philosophy articles that report original empirical research (a
 
 **References**
 
-<div style="text-indent: -10em; padding-left: 10em;">De Bruin, Boudewijn. 2023. “Ranking Philosophy Journals: A Meta-Ranking and a New Survey Ranking.” _Synthese_ 202 (6): 188. https://doi.org/10.1007/s11229-023-04342-9.</div>
+<div style="text-indent: -10em; padding-left: 10em;">De Bruin, Boudewijn. 2023. “Ranking Philosophy Journals: A Meta-Ranking and a New Survey Ranking.” <em>Synthese</em> 202 (6): 188. https://doi.org/10.1007/s11229-023-04342-9.</div>
 
 
 
