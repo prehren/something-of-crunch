@@ -7,7 +7,9 @@ table {
   border:none;
   font-size:0.8em;
   tr {
-    background-color: transparent;
+    &:nth-child(even) {
+      background-color: transparent;
+    }
   }
   th {
     background-color: transparent;
