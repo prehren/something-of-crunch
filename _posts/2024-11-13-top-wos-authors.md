@@ -3,7 +3,7 @@ title: "Most Cited Philosophy Authors on the WoS"
 date: 2024-11-13
 ---
 
-On his [blog](https://schwitzsplinters.blogspot.com/2024/08/the-378-most-cited-contemporary-authors.html), Eric Schwitzgebel has posted a list of the most cited authors in philosophy according to the SEP. Since I have been playing around with citation data from the Web of Science, I figured it might be interesting to do something similar.
+On his [blog](https://schwitzsplinters.blogspot.com/2024/08/the-378-most-cited-contemporary-authors.html), Eric Schwitzgebel has posted a list of the most cited authors in philosophy according to the SEP. While playing around with citation data from the Web of Science, I figured it might be interesting to do something similar with these data.
 
 The WoS provides 'Cited References' for many of its entries. As of Sept 2024 (when I downloaded the data), the WoS indexed around 540,000 articles in the category Philosophy (English: ~410,000; French: ~36,000; German: ~25,000; Spanish: ~16,000; Italian: ~13,000; Russian: ~12,000; everything else: < 10,000). Of these articles, around 495,000 had at least one cited item associated with them, for a total of around 9 million references.
 
