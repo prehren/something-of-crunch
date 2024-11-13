@@ -20,7 +20,9 @@ Here is a random sample of 10 references:
 - Chisholm R. M., 1957, Perceiving: A philosophical study.
 - BOLLNOW OF, 1997, HERMENEUUSCHE PHILOS, P323.
 
-While there is not a huge amount of information here (e.g., no article titles; no publisher information; no editors), almost all cited items include author names (or rather: the name of the first author—my sense is that co-authors are generally omitted). That's good. What is less ideal is that for most authors, we only get initials, not full first names. Yet many first initial-last name combinations are going to be shared by lots of authors. 
+While there is not a huge amount of information here (e.g., no article titles; no publisher information; no editors), almost all cited items include author names[^1]. That's good. What is less ideal is that for most authors, we only get initials, not full first names. Yet many first initial-last name combinations are going to be shared by lots of authors. 
+
+[^1]: Or, rahter, the name of the first author---my sense is that co-authors are generally omitted. This isn't much of any problem, though, [given that the vast majority of philosophy articles are single-authored](https://prehren.github.io/something-of-crunch/2023/12/20/co-authorship.html).
 
 One possible way to get around this problem would be to only keep references with at least one full first name. However, this strategy has at least two severe issues. First, the strategy filters out references to works by authors without a first name (e.g., Aristotle, Plato, Plutarch, Averroes). Of course, it is possible to keep these references in the dataset. This introduces a different problem, however. Consider Aristotle. Aristotle virtually always get referenced as 'Aristotle.' This means that my filtered dataset would include (almost) all references to Aristotle's works. Compare that to an author like David Lewis, who usually gets referenced as 'David Lewis' or 'D. Lewis.' The filtered dataset would only contain instances of the first case, but not instances of the second case. As a result, Aristotle's citation count would be (quite dramatically) inflated compared to David Lewis' citation count.
 
