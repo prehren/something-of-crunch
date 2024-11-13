@@ -1,12 +1,21 @@
-table, tr, td {
-    border: none;
-}
-table { 
+table {
   border-collapse:collapse;
-  width: auto;
+  width:auto;
   table-layout:auto;
   margin-left:auto;
   margin-right:auto;
+  tr {
+    &:nth-child(even) {
+      background-color: transparent;
+    }
+  }
+  th {
+    background-color: transparent;
+    border: none;
+  }
+  td {
+    border: none;
+  }
 }
 .thead { 
   border-top: double;
