@@ -20,11 +20,13 @@ Here is a random sample of 10 references:
 - Chisholm R. M., 1957, Perceiving: A philosophical study.
 - BOLLNOW OF, 1997, HERMENEUUSCHE PHILOS, P323.
 
-While there is not a huge amount of information here (e.g., no article titles; no publisher information; no editors), almost all cited items include author names (or rather: the name of the first author—my sense is that co-authors are generally omitted). That's good. What is not so great is that for most authors, we only get initials, not full first names. Yet many first initial-last name combinations are going to be shared by lots of authors. To get around this problem (or at least make it much more palatable), I decided only to keep references with at least one full first name (defined as an upper-case letter followed by at least one lower-case letters), or no first names at all (in order not to loose authors like Aristotle, Plato, Plutarch, Averroes, etc.). 
+While there is not a huge amount of information here (e.g., no article titles; no publisher information; no editors), almost all cited items include author names (or rather: the name of the first author—my sense is that co-authors are generally omitted). That's good. What is less ideal is that for most authors, we only get initials, not full first names. Yet many first initial-last name combinations are going to be shared by lots of authors. 
 
-This introduces a problem, however. Consider Aristotle. Aristotle virtually always get referenced as 'Aristotle.' So my filtered dataset will include (almost) all references to Aristotle's works. Compare that to an author like David Lewis, who either gets referenced as 'David Lewis' or 'D. Lewis.' My dataset will only contain instances of the first case, but not instances of the second case. As a result, Aristotle's citation count will be (quite dramatically) inflated compared to David Lewis' citation count.
+One possible way to get around this problem would be to only keep references with at least one full first name. However, this strategy has at least two severe issues. First, the strategy filters out references to works by authors without a first name (e.g., Aristotle, Plato, Plutarch, Averroes). Of course, it is possible to keep these references in the dataset. This introduces a different problem, however. Consider Aristotle. Aristotle virtually always get referenced as 'Aristotle.' This means that my filtered dataset would include (almost) all references to Aristotle's works. Compare that to an author like David Lewis, who usually gets referenced as 'David Lewis' or 'D. Lewis.' The filtered dataset would only contain instances of the first case, but not instances of the second case. As a result, Aristotle's citation count would be (quite dramatically) inflated compared to David Lewis' citation count.
 
-To address this issue, we need a way to scale Aristotle's citation count down to what it would have been if Aristotle did have a first name (in which case the filtered dataset would have only contained references to 'Chad Aristotle,' not 'C. Aristotle.') To achieve this, I'll assume that all authors share roughly the same probability of being referred to with their full first name(s) vs. their initial(s). 
+The second issue is that 
+
+These two problems combined mean that I 
 
 Some of the journals the WoS lists under Philosophy strike me as questionable. For instance: Are the _Nursing History Review_, the _Journal of Medical Biography_, the _Journal for the History of Astronomy_ or _Engineering Studies_ really philosophy journals? I think not. As a result, I decided to remove all journals from the dataset that are not also indexed on PhilPapers. This method isn't perfect, of course, but I think it is good enough.
 
@@ -43,6 +45,3 @@ Here are a few observations: First, while I am of course aware that Aristotle an
 Schwitzgebel makes it clear, of course, that his ranking only captures current influence in 'mainstream Anglophone philosophy,' and so the fact that Derrida, Foucault et al. are not particularly high up on his list is not surprising. The question, then, is: What does the current ranking capture? The answer I think depends a lot on whether the journals in my dataset capture published academic philosophy. he current ranking captures  is not unreasonable to claim that the current ranking is able to capture influence across philosophy more broadly. I will probably make a shiny app that allows people to select which journals they want included an the like, so that people who disagree can puruse the dataset at their own leasure.
 
 Since this data is longitudinal (1975-2024), I also looked at . I made the graph interactive because it is a mess otherwise.
-
-
-
