@@ -1,6 +1,6 @@
 ---
-title: "Co-authorship in Philosophy: Now and Then"
-date: 2023-12-20
+title: "Most Cited Philosophy Authors on the WoS"
+date: 2024-11-13
 ---
 
 In some disciplines (e.g., psychology; the natural sciences), papers commonly have more than one author. Not so much in philosophy. In 2021, 83.5% of philosophy articles were single-authored, 12.2% of philosophy were co-authored and only 4.3% had more than two authors (see [here](https://prehren.github.io/something-of-crunch/2023/12/11/generalist-journals.html) for a description of the data these numbers are based on).
