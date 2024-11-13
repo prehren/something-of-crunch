@@ -584,7 +584,7 @@ Here are the top 510 (brackets show mean percentages):
 510\. F Suarez (0.016%)\
 510\. C List (0.016%)\
 510\. M Ruse (0.016%)\
-510\. K Wiredu (0.016%)\
+510\. K Wiredu (0.016%)
 
 Here are a few observations: First, while I am of course aware that Aristotle and Plato are ...like, important, I still find it pretty incredible that they come in first and third after having been dead for more than 2000 years. Second, there is a sharp drop-off after the first four authors (Aristotle, Kant, Plato, Heidegger): Their cumulative score is roughly equal to the cumulative score of the next fourteen authors (Wittgenstein to Habermas). Big Four? Third, a number of people in Schwitzgebel's comments asked questions/expressed dismay about the low ranks of various (European) authors. On the current list, these authors tend to rank much higher: Derrida (ranked #9), Foucault (#21), Merleau-Ponty (#23), Gadamer (#50), Adorno (#65) and Cavell (#90), for example, are all in the top 100.
 
