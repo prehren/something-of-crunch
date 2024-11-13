@@ -9,13 +9,13 @@ I find this a little odd, given how often I’ve heard it stressed that bouncing
 
 A while ago, someone at a workshop I was at suggested that philosophy has in fact become more collaborative in recent decades. Is this true? In Figure 1, I plot the proportions of philosophy articles with 1, 2, 3, 4 and 5 or more authors since 1975.
 
-![Figure 1. Proportion of philosophy articles with 1, 2, 3, 4 and 5 or more authors since 1975.]({{site.url}}/something-of-crunch/assets/images/2023-20-12/figure1.png)
+![Figure 1. Proportion of philosophy articles with 1, 2, 3, 4 and 5 or more authors since 1975.]({{site.url}}/something-of-crunch/assets/images/2023-12-20/figure1.png)
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 1. Proportion of philosophy articles with 1, 2, 3, 4 and 5 or more authors since 1975.</p>
 <br>
 
 I also calculated the journal average number of authors for articles published since 1975. Figure 2 shows the results, along with the range (that is, the range of values for the mean number of authors in all journals per year), standard deviation and 95% confidence intervals.
 
-![Figure 2. Journal average number of authors since 1975.]({{site.url}}/something-of-crunch/assets/images/2023-20-12/figure2.png)
+![Figure 2. Journal average number of authors since 1975.]({{site.url}}/something-of-crunch/assets/images/2023-12-20/figure2.png)
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 2. Journal average number of authors since 1975.</p>
 <br>
 
@@ -36,7 +36,7 @@ For 4., I used the five major sub-field clusters listed on [PhilPapers](https://
 
 Figure 3 shows the average number of authors since 1975 broken up by sub-field cluster (sub-figure A), journal ranking (mainstream vs. other; B) and purity (C).
 
-![Figure 3. Average number of authors over time by sub-field cluster (A), journal ranking (B) and purity (C); shaded areas show 95% confidence intervals.]({{site.url}}/something-of-crunch/assets/images/2023-20-12/figure3.png)
+![Figure 3. Average number of authors over time by sub-field cluster (A), journal ranking (B) and purity (C); shaded areas show 95% confidence intervals.]({{site.url}}/something-of-crunch/assets/images/2023-12-20/figure3.png)
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 3. Average number of authors over time by sub-field cluster (A), journal ranking (B) and purity (C); shaded areas show 95% confidence intervals.</p>
 <br>
 
@@ -154,7 +154,7 @@ The model provides evidence for 2. and 4. Year remained an overall significant p
 
 Investigating 3. is a bit more tricky since this requires a way of identifying articles that report original empirical research. I don’t think there is a way to do this reliably based just on the meta-data I have available. However, for a different project, I had already downloaded the full texts of all original research articles (18,442 in total) published between 1971 and 2021 in six journals (_Australasian Journal of Philosophy_; _Analysis_; _Mind_; _Noûs_; _Philosophical Studies_; _Synthese_). Within these texts, I searched for the strings “(our OR my) AND (result[s] OR finding[s])” and “(our OR my) AND (study OR studies OR experiment[s])”, reasoning that if a text included both, it likely reported original empirical results. This is of course not definitive, but I think it generates a reasonable guess. Figure 4 shows the percentage of articles (in the six journals listed above) since 1975 that reported original empirical research (inset figure) and the average number of authors since 1975 on articles that reported empirical research vs. regular philosophy articles (main figure).
 
-![Figure 4. Percentage of articles since 1975 in six journals that reported empirical research (inset figure); average number of authors since 1975 on articles that reported empirical research vs. regular philosophy articles (main figure). Shaded areas show 95% CI (note that before 2001-5, there were not enough articles in the dataset to estimate these).]({{site.url}}/something-of-crunch/assets/images/2023-20-12/figure4.png)
+![Figure 4. Percentage of articles since 1975 in six journals that reported empirical research (inset figure); average number of authors since 1975 on articles that reported empirical research vs. regular philosophy articles (main figure). Shaded areas show 95% CI (note that before 2001-5, there were not enough articles in the dataset to estimate these).]({{site.url}}/something-of-crunch/assets/images/2023-12-20/figure4.png)
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 4. Percentage of articles since 1975 in six journals that reported empirical research (inset figure); average number of authors since 1975 on articles that reported empirical research vs. regular philosophy articles (main figure). Shaded areas show 95% CI (note that before 2001-5, there were not enough articles in the dataset to estimate these).</p>
 <br>
 
