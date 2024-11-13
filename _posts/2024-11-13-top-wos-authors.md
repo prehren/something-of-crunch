@@ -44,7 +44,7 @@ To avoid (a) and (b), I divided my data into time bins (I chose five years), cal
 
 Here are the top 510 (brackets show mean percentages):
 
-1\. M Heidegger (0.676%)\
+1\.\t M Heidegger (0.676%)\
 2\. I Kant (0.615%)\
 3\. E Husserl (0.445%)\
 4\. J Derrida (0.381%)\
