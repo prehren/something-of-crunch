@@ -44,7 +44,25 @@ To avoid (a) and (b), I divided my data into time bins (I chose five years), cal
 
 Here are the top 510 (brackets show mean percentages):
 
-1. M Heidegger (0.676%)\2. I Kant (0.615%)\3. E Husserl (0.445%)\4. J Derrida (0.381%)\5. M Foucault (0.363%)\6. Aristotle (0.358%)\7. GWF Hegel (0.309%)\8. L Wittgenstein (0.281%)\9. G Deleuze (0.271%)\10. D Lewis (0.263%)\11. F Nietzsche (0.259%)\12. J Habermas (0.242%)\13. Plato (0.216%)\14. D Hume (0.21%)\W Quine (0.21%)\16. J Rawls (0.205%)\17. K Marx (0.202%)\18. M Merleau Ponty (0.186%)\19. JP Sartre (0.181%)\20. J Dewey (0.177%)\
+1. M Heidegger (0.676%)
+2. I Kant (0.615%)
+3. E Husserl (0.445%)
+4. J Derrida (0.381%)
+5. M Foucault (0.363%)
+6. Aristotle (0.358%)
+7. GWF Hegel (0.309%)
+8. L Wittgenstein (0.281%)
+9. G Deleuze (0.271%)
+10. D Lewis (0.263%)
+11. F Nietzsche (0.259%)
+12. J Habermas (0.242%)
+13. Plato (0.216%)
+14. D Hume (0.21%)\W Quine (0.21%)
+16. J Rawls (0.205%)
+17. K Marx (0.202%)
+18. M Merleau Ponty (0.186%)
+19. JP Sartre (0.181%)
+20. J Dewey (0.177%)
 
 Here are a few observations: First, while I am of course aware that Aristotle and Plato are ...like, important, I still find it pretty incredible that they come in first and third after having been dead for more than 2000 years. Second, there is a sharp drop-off after the first four authors (Aristotle, Kant, Plato, Heidegger): Their cumulative score is roughly equal to the cumulative score of the next fourteen authors (Wittgenstein to Habermas). Big Four? Third, a number of people in Schwitzgebel's comments asked questions/expressed dismay about the low ranks of various (European) authors. On the current list, these authors tend to rank much higher: Derrida (ranked #9), Foucault (#21), Merleau-Ponty (#23), Gadamer (#50), Adorno (#65) and Cavell (#90), for example, are all in the top 100.
 
