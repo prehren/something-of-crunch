@@ -42,15 +42,113 @@ Figure 3 shows the average number of authors since 1975 broken up by sub-field c
 
 All three sub-figures suggest differences in trajectories between category levels. To statistically test for these (potential) differences, I used a negative binomial model (to account for over-dispersion) with the number of co-authors (i.e., the number of authors minus one) as the outcome and year, and sub-field cluster, journal ranking and journal purity, and their interactions with year as predictors. Here are the results:
 
-```html
-<html>
-  <head>
-  </head>
-  <body>
-    <p>Hello, World!</p>
-  </body>
-</html>
-```
+<table>
+  <tr>
+    <th class="thead firsttablerow firsttablecol">&nbsp;</th>
+    <th colspan="3" class="thead firsttablerow">Number of co-authors</th>
+  </tr>
+  <tr>
+    <td class="depvarhead firsttablerow firsttablecol">Predictors</td>
+    <td class="depvarhead firsttablerow">IRR</td>
+    <td class="depvarhead firsttablerow">95% CI</td>
+    <td class="depvarhead firsttablerow">p</td>
+  </tr>
+  <tr>
+    <td class="tdata firsttablecol">Intercept</td>
+    <td class="tdata centeralign">0.05</td>
+    <td class="tdata centeralign">0.04&nbsp;&ndash;&nbsp;0.06</td>
+    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
+</tr>
+  <tr>
+    <td class="tdata firsttablecol">Year</td>
+    <td class="tdata centeralign">1.02</td>
+    <td class="tdata centeralign">1.01&nbsp;&ndash;&nbsp;1.03</td>
+    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
+</tr>
+  <tr>
+    <td class="tdata firsttablecol">Purity (Pure philosophy)</td>
+    <td class="tdata centeralign">0.55</td>
+    <td class="tdata centeralign">0.45&nbsp;&ndash;&nbsp;0.66</td>
+    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
+</tr>
+  <tr>
+    <td class="tdata firsttablecol">Mainstream (Other)</td>
+    <td class="tdata centeralign">0.69</td>
+    <td class="tdata centeralign">0.57&nbsp;&ndash;&nbsp;0.84</td>
+    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
+</tr>
+  <tr>
+    <td class="tdata firsttablecol">Sub-field cluster (LEM&M)</td>
+    <td class="tdata centeralign">0.99</td>
+    <td class="tdata centeralign">0.77&nbsp;&ndash;&nbsp;1.27</td>
+    <td class="tdata centeralign">0.957</td>
+</tr>
+  <tr>
+    <td class="tdata firsttablecol">Sub-field cluster (Phil. Trad.)</td>
+    <td class="tdata centeralign">1.12</td>
+    <td class="tdata centeralign">0.81&nbsp;&ndash;&nbsp;1.53</td>
+    <td class="tdata centeralign">0.497</td>
+</tr>
+  <tr>
+    <td class="tdata firsttablecol">Sub-field cluster (SL&M)</td>
+    <td class="tdata centeralign">2.01</td>
+    <td class="tdata centeralign">1.57&nbsp;&ndash;&nbsp;2.57</td>
+    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
+</tr>
+  <tr>
+    <td class="tdata firsttablecol">Year:Sub-field cluster (Value Theory)</td>
+    <td class="tdata centeralign">0.94</td>
+    <td class="tdata centeralign">0.73&nbsp;&ndash;&nbsp;1.21</td>
+    <td class="tdata centeralign">0.646</td>
+</tr>
+  <tr>
+    <td class="tdata firsttablecol">Year:Purity (Pure philosophy)</td>
+    <td class="tdata centeralign">1.00</td>
+    <td class="tdata centeralign">0.99&nbsp;&ndash;&nbsp;1.00</td>
+    <td class="tdata centeralign">0.100</td>
+</tr>
+  <tr>
+    <td class="tdata firsttablecol">Year:Mainstream (Other)</td>
+    <td class="tdata centeralign">1.01</td>
+    <td class="tdata centeralign">1.01&nbsp;&ndash;&nbsp;1.02</td>
+    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
+</tr>
+  <tr>
+    <td class="tdata firsttablecol">Year:Sub-field cluster (LEM&M)</td>
+    <td class="tdata centeralign">1.02</td>
+    <td class="tdata centeralign">1.02&nbsp;&ndash;&nbsp;1.03</td>
+    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
+</tr>
+  <tr>
+    <td class="tdata firsttablecol">Year:Sub-field cluster (Phil. Trad.)</td>
+    <td class="tdata centeralign">0.99</td>
+    <td class="tdata centeralign">0.98&nbsp;&ndash;&nbsp;1.00</td>
+    <td class="tdata centeralign">0.101</td>
+</tr>
+  <tr>
+    <td class="tdata firsttablecol">Year:Sub-field cluster (SL&M)</td>
+    <td class="tdata centeralign">1.01</td>
+    <td class="tdata centeralign">1.01&nbsp;&ndash;&nbsp;1.02</td>
+    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
+</tr>
+  <tr>
+    <td class="tdata firsttablecol">Year:Sub-field cluster (Value Theory)</td>
+    <td class="tdata centeralign">1.04</td>
+    <td class="tdata centeralign">1.03&nbsp;&ndash;&nbsp;1.05</td>
+    <td class="tdata centeralign"><strong>&lt;0.001</strong></td>
+</tr>
+  <tr>
+    <td class="tdata leftalign summary firstsumrow">Observations</td>
+    <td class="tdata summary summarydata firstsumrow" colspan="3">98898</td>
+  </tr>
+  <tr>
+    <td class="tdata leftalign summary">R<sup>2</sup> Nagelkerke</td>
+    <td class="tdata summary summarydata" colspan="3">0.193</td>
+  </tr>
+  <tr>
+    <th colspan="4" class="thead firsttablerow"></th>
+  </tr>
+</table>
 
 The model provides evidence for 2. and 4. Year remained an overall significant predictor of the number of co-authors: with ever year, the expected co-author count increased by a factor of 1.02 (while holding all other variables in the model constant). This increase over time was significantly steeper for journals outside of the mainstream compared to mainstream journals and for articles from three of philosophy’s five sub-field clusters (SL&M; LEM&M; Value Theory). In contrast, the interaction between journal purity and year was not significant, and so the model does not provide evidence for explanation 1.
 
