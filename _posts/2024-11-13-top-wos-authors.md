@@ -30,7 +30,7 @@ The second problem is that only keeping references with full author names result
 
 Filtering out rows with only first initials, then, is unfortunately not an option. Instead, I decided to convert full first names into first initials (e.g., Immanuel Kant -> I Kant, David Lewis -> D Lewis). This means that I get to keep most of the original data. The trade-off is that my results will need to be taken with a grain of salt: Many first initial(s)-last name combinations are going to be shared by multiple authors. That said, there's reason to believe that this limitation isn't too severe. I restricted the data to rows with full first names available, and then calculated the proportion of full first name(s)-last name combinations associated with each first initial(s)-last name combination in the top 500 (see below). On average, the most common full first name(s)-last name combination accounted for over 90% of all occurences of a given first initial(s)-last name combination. In other words, it seems that the first initial(s)-last name combinations in the top 500 generally refer to a single author, instead of a hodgepode of multiple different authors.
 
-On to data cleaning.[^2] Some authors frequently get referenced only by their last name (e.g., Kant, Marx, Hume, Wittgenstein). To match these occurences to first initial(s)-last name combinations, I calculated the proportion of first initial(s)-last name combinations for each last name in the dataset. Here are the results for Immanuel Kant:
+On to data cleaning.[^2] Some authors frequently get referenced only by their last name (e.g., Kant, Marx, Hume, Wittgenstein). To match these occurences to first initial(s)-last name combinations, I calculated the proportion of first initial(s)-last name combinations for each last name in the dataset. Here are the first ten lines of the results for Kant:
 
 ```
    full_nameINITIALS     n     N     prop
@@ -47,7 +47,7 @@ On to data cleaning.[^2] Some authors frequently get referenced only by their la
 10 P Kant                8 27340 0.000293
 ```
 
-I then reasoned that if the last name was the second most common way to reference an author, that reference likely refered to the most common author. 
+We see that for Kant, more than 90% of references are to I Kant. The second most common reference is just to the last name Kant. In this situation, it strikes me as reasonable to assume that these references to the last name mean I Kant. Therefore, whenever it was the case for a given last name that the most common reference was to a first initial(s)-that last name combination and the second most common reference was to just that last name, I replaced all references to just that last name with the most common first initial(s)-last name combination.
 
 If articles in the same in the same journal cited two authors with the same last name but different first initials in the same five year time span (see below) _and_ the first initials started with the same letter _and_ one of the two sets of first initials was an ordered subset of the other.
 
