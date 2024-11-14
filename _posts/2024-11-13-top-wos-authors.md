@@ -30,7 +30,7 @@ The second problem is that only keeping references with full author names result
 
 Filtering out rows with only first initials, then, is unfortunately not an option. Instead, I decided to convert full first names into first initials (e.g., Immanuel Kant --> I Kant, David Lewis --> D Lewis). This means that I get to keep most of the original data. The trade-off is that my results will need to be taken with a grain of salt: Many first initial(s)-last name combinations are going to be shared by multiple authors. That said, there's reason to believe that this limitation isn't too severe. I restricted the data to rows with full first names available, and then calculated the proportion of full first name(s)-last name combinations associated with each first initial(s)-last name combination in the top 500 (see below). On average, the most common full first name(s)-last name combination accounted for over 90% of all occurences of a given first initial(s)-last name combination. In other words, it seems that the first initial(s)-last name combinations in the top 500 generally refer to a single author, instead of a hodgepode of multiple different authors.
 
-On to data cleaning.[^2] Some authors frequently get referenced only by their last name (e.g., Kant, Marx, Hume, Wittgenstein). To match these occurences to first initial(s)-last name combinations, I calculated the proportion of first initial(s)-last name combinations for each last name in the dataset. Here are the first ten lines of the results for 'Kant':
+On to data cleaning.[^2] Some authors frequently get referenced only by their last name (e.g., Kant, Marx, Hume, Wittgenstein). To match these occurences to first initial(s)-last name combinations, I calculated the proportion of first initial(s)-last name combinations for each last name in the dataset. Here are the first give lines of the results for 'Kant':
 
 ```
    full_nameINITIALS     n     N     prop
@@ -40,16 +40,13 @@ On to data cleaning.[^2] Some authors frequently get referenced only by their la
  3 E Kant              413 27340 0.0151  
  4 IMMANUEL Kant        46 27340 0.00168 
  5 H Kant               13 27340 0.000475
- 6 L Kant               13 27340 0.000475
- 7 T Kant               10 27340 0.000366
- 8 D Kant                9 27340 0.000329
- 9 A Kant                8 27340 0.000293
-10 P Kant                8 27340 0.000293
 ```
 
 For 'Kant', more than 90% of references are to 'I Kant'. The second most common reference is just to the last name 'Kant'. In this situation, it strikes me as reasonable to assume that these references to the last name are to 'I Kant'. Therefore, whenever for a given last name it was the case that the most common reference was to a first initial(s)-that last name combination and the second most common reference was to just that last name, I replaced all references to just that last name with the most common first initial(s)-last name combination. I also deleted all other instances of just last name references (unless they were the most common type of reference, of course).
 
-Certain authors get referenced  If articles in the same in the same journal cited two authors with the same last name but different first initials in the same five year time span (see below) _and_ the first initials started with the same letter _and_ one of the two sets of first initials was an ordered subset of the other. Some authors get referenced with completely different names. Certain misseplling are such that they my two strategies above would miss them.
+Some authors get cited using multiple different sets of first initials (e.g., David Lewis as 'D Lewis' or 'DK Lewis'; Hegel as 'G Hegel,' 'GW Hegel' or 'GWF Hegel'). To combine these and other cases like them a single first initial(s)-last name combination, I used the following rule: If two or more articles in the same journal cite two authors with the same last name but different sets of first initials in the same five year period (see below) _and_ the two sets of first initials start with the same letter _and_ one of the two sets is an ordered subset of the other, then the two first initial(s)-last name combinations refer to the same author and one can be replaced with the other. While this is not perfect, it did seem to work surprisingly well---for example, it caught the two examples described at the start of this paragraph.
+
+Some authors get referenced with completely different names. Certain misseplling are such that they my two strategies above would miss them.
 
 [^2]: Given that I am dealing with millions of references, extensive manual data cleaning was out of the question.
 
