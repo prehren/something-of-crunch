@@ -32,6 +32,8 @@ Filtering out rows with only first initials, then, is unfortunately not an optio
 
 On to data cleaning.[^2] Some authors frequently get referenced only by their last name (e.g., Kant, Marx, Hume, Wittgenstein). To match these occurences to first initial(s)-last name combinations, I calculated the proportion of first initial(s)-last name combinations for each last name in the dataset. Here are the first give lines of the results for 'Kant':
 
+[^2]: Given that I am dealing with millions of references, extensive manual data cleaning was out of the question.
+
 ```
    full_nameINITIALS     n     N     prop
    <chr>             <int> <int>    <dbl>
@@ -44,11 +46,7 @@ On to data cleaning.[^2] Some authors frequently get referenced only by their la
 
 For 'Kant', more than 90% of references are to 'I Kant'. The second most common reference is just to the last name 'Kant'. In this situation, it strikes me as reasonable to assume that these references to the last name are to 'I Kant'. Therefore, whenever for a given last name it was the case that the most common reference was to a first initial(s)-that last name combination and the second most common reference was to just that last name, I replaced all references to just that last name with the most common first initial(s)-last name combination. I also deleted all other instances of just last name references (unless they were the most common type of reference, of course).
 
-Some authors get cited using multiple different sets of first initials (e.g., David Lewis as 'D Lewis' or 'DK Lewis'; Hegel as 'G Hegel,' 'GW Hegel' or 'GWF Hegel'). To combine these and other cases like them a single first initial(s)-last name combination, I used the following rule: If two or more articles in the same journal cite two authors with the same last name but different sets of first initials in the same five year period (see below) _and_ the two sets of first initials start with the same letter _and_ one of the two sets is an ordered subset of the other, then the two first initial(s)-last name combinations refer to the same author and one can be replaced with the other. While this is not perfect, my sense is that it worked surprisingly well—for example, it caught the two examples described at the top of this paragraph.
-
-Some authors get referenced with completely different names. Certain misseplling are such that they my two strategies above would miss them.
-
-[^2]: Given that I am dealing with millions of references, extensive manual data cleaning was out of the question.
+Some authors get cited using multiple different sets of first initials (e.g., David Lewis as 'D Lewis' or 'DK Lewis'; Hegel as 'G Hegel,' 'GW Hegel' or 'GWF Hegel'). To combine these and other cases like them a single first initial(s)-last name combination, I used the following rule: If two or more articles in the same journal cite two authors with the same last name but different sets of first initials in the same five year period (see below) _and_ the two sets of first initials start with the same letter _and_ one of the two sets is an ordered subset of the other, then the two first initial(s)-last name combinations refer to the same author and one can be replaced with the other. While this is not perfect, my sense is that it worked surprisingly well--it caught the two examples described at the top of this paragraph, for example.
 
 Some of the journals the WoS lists under Philosophy strike me as questionable. For instance: Are the _Nursing History Review_, the _Journal of Medical Biography_, the _Journal for the History of Astronomy_ or _Engineering Studies_ really philosophy journals? I think not. As a result, I decided to remove all journals from the dataset that are not also indexed on PhilPapers. This method isn't perfect, of course, but I think it is good enough.
 
