@@ -1,5 +1,5 @@
 ---
-title: "Most Cited Philosophy Authors on the WoS"
+title: "Most Cited Authors on the WoS"
 date: 2024-11-13
 ---
 
