@@ -602,7 +602,7 @@ A few observations. First, I've now been at uni studying philosophy for more tha
 
 A brief comment on that last observation: Schwitzgebel makes it clear that his ranking captures current influence in 'mainstream Anglophone philosophy,' and so the fact that Derrida, Foucault et al. are not particularly high up on his list is not surprising. This raises the question what the current ranking captures. Mostly, the answer depends on what one thinks of the selection of journals the ranking is based on. In my experience, the WoS and PP both err on the side of being overly comprehensive. If so, then it is not on its face unreasonable to claim that the current list (based, as it is, on a list of journals indexed on both platforms) captures (something like) influence in (published) academic philosophy during the last 50 years. Others may disagree, of course.
 
-<iframe src="https://prehren.github.io/something-of-crunch/assets/html/2024-11-13/figure1.html" title="fig" style="border:none; margin:0 auto; display: block; width:100%; height:500px;">
-</iframe>
-
+<iframe src="https://prehren.github.io/something-of-crunch/assets/html/2024-11-13/figure1.html" title="Figure 1. Development over time of the top 25." style="border:none; margin:0 auto; display: block; width:100%; height:500px;"></iframe>
+<p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 1. Development over time of the top 25.</p>
+<br>
 
