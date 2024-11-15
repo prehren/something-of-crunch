@@ -5,10 +5,11 @@ date: 2024-11-15
 
 I've made a Shiny app that allows people to puruse the WoS citation data [I recently used](https://prehren.github.io/something-of-crunch/2024/11/13/top-wos-authors.html) to rank the most cited authors in philosophy journals since 1975 at their own leasure. Here it is (if the app does not show up below, you can also find it on [shinyapps.io](https://prehren.shinyapps.io/most-cited-philosophers-wos/)):
 
-<div id="target" style="width:100%; height:1180px; margin:0; padding-bottom:1em; display:block;">
+<div id="target" style="width:100%; height:1180px; margin:0; :block;">
   <iframe src="https://prehren.shinyapps.io/most-cited-philosophers-wos/" title="Shiny app that allows users to puruse the WoS citation data I recently used to rank the most cited authors in philosophy
     journals since 1975 at their own leasure." style="border:none; width:100%; height:100%;" scrolling="no"></iframe>
 </div>
+<br>
 
 Brief explanation: The top panel shows the overall ranking; the bottom panel shows the ranking's development over time. _k_ is the number of authors included in the overall ranking. _Lowest rank shown_ is the lowest rank shown in the bottom panel. _Start when?_ asks for the first time bin from which data is to be included in the figure(s). Some journals have not been running since 1975; other journals have been running for at least that long, but the WoS does not provide (enough) citation data for articles in these journals until a later point in time. If _Only journals that cover the entire period?_ is selected, then the generated figure(s) are based on articles in journals for which data were available for the entire period since _Start when?_. Otherwise, data from all relevant journals are included.
 
