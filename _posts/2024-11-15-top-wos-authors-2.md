@@ -7,7 +7,7 @@ I've made a Shiny app that allows people to puruse the WoS citation data [I rece
 
 <div id="target" style="width:100%; height:1180px; margin:0; display:block; overflow:hidden;" scrolling="no">
   <iframe src="https://prehren.shinyapps.io/most-cited-philosophers-wos/" title="Shiny app that allows users to puruse the WoS citation data I recently used to rank the most cited authors in philosophy
-    journals since 1975 at their own leasure." style="border:none; width:100%; height:100%;"></iframe>
+    journals since 1975 at their own leasure." style="border:none; width:100%; height:100%; overflow:hidden;" scrolling="no"></iframe>
 </div>
 <br>
 
