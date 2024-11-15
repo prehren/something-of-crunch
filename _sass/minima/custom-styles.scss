@@ -1,3 +1,10 @@
+#target {
+    overflow-y: auto;
+    overflow-x: auto;
+    resize: both;
+    position: relative;
+    z-index: 2;
+}
 img {
   display: block;
   margin-left: auto;
