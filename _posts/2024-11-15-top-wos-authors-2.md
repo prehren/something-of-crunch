@@ -3,7 +3,7 @@ title: "Most Cited Authors on the WoS: There's an App For That!"
 date: 2024-11-15
 ---
 
-I've made a Shiny app that allows people to puruse the WoS citation data [I recently used](https://prehren.github.io/something-of-crunch/2024/11/13/top-wos-authors.html) to rank the most cited authors in philosophy journals since 1975 at their own leasure. Here it is (if the app does not show up below or loads to slowly, you can also find it on [shinyapps.io](https://prehren.shinyapps.io/most-cited-philosophers-wos/)):
+I've made a Shiny app that allows people to peruse the WoS citation data [I recently used](https://prehren.github.io/something-of-crunch/2024/11/13/top-wos-authors.html) to rank the most cited authors in philosophy journals since 1975 at their own leisure. Here it is (if the app does not show up below or loads to slowly, you can also find it on [shinyapps.io](https://prehren.shinyapps.io/most-cited-philosophers-wos/)):
 
 <div id="target" style="width:100%; height:1180px; margin:0; display:block; overflow:hidden;" scrolling="no">
   <iframe src="https://prehren.shinyapps.io/most-cited-philosophers-wos/" title="Shiny app that allows users to puruse the WoS citation data I recently used to rank the most cited authors in philosophy
