@@ -151,4 +151,4 @@ To end, this is what the overall top 100 (102 because of ties) looks like if I a
 102\.&nbsp;&nbsp;&nbsp;&nbsp;JL Nancy (0.05%)\
 102\.&nbsp;&nbsp;&nbsp;&nbsp;C Hempel (0.05%)
 
-On the whole, this top 100 is quite similar to the original top 100. A few differences I noticed are that Kant is now #1; David Lewis moved up considerably (from #12 to #7); and Wittgenstein and Nietzsche are out of the top 10. However, given that all of these changes are due to rather small changes in the underlying mean percentages, I don't think these differences between the two lists are all that meaningful.
+On the whole, this top 100 is quite similar to [the original top 100](https://prehren.github.io/something-of-crunch/2024/11/13/top-wos-authors.html). A few differences I noticed are that Kant is now #1; David Lewis moved up considerably (from #12 to #7); and Wittgenstein and Nietzsche are out of the top 10. However, given that all of these changes are due to rather small changes in the underlying mean percentages, I don't think these differences between the two lists are all that meaningful.
