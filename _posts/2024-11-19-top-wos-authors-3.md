@@ -21,10 +21,25 @@ Compare this to a figure like Kant (the overall #2). The difference between Kant
 
 So far, I have been discussing authors whose influence in _one_ sub-field cluster outstrips their influence in _all_ other sub-field clusters. However, an author might also have been (much) more influential in two or more sub-field clusters than in one or more of the other sub-field clusters. Conversely, even an author who’s been (much) more influential in one sub-field cluster than in the others might still have had a similar amount of influence in these other clusters. What would be useful, then, is to also have a look at the spread of the median ranks for different authors. I therefore calculated for each author in the top 100 the range [max(rank)-min(rank)] of their median ranks. Figure 2 shows the results.
 
-![Figure 2. Range of median ranks for top 100 authors.]({{site.url}}/something-of-crunch/assets/images/2024-11-19/fig1.png){: width="100%"}
+![Figure 2. Range of median ranks for top 100 authors.]({{site.url}}/something-of-crunch/assets/images/2024-11-19/fig2.png){: width="100%"}
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 2. Range of median ranks for top 100 authors.</p>
 <br>
 
+Two quick observations. At the low end of the y-axis, Kant and Wittgenstein stand out: Both have been very influential (#2 and #10 overall, respectively), and the amount of influence they’ve had during the last 50 years seems to have been roughly similar across philosophy’s five major sub-field clusters. I think I’ve once read somewhere that Kant was unique among influential figures in the history of philosophy for the breadth of his influence. These results would seem to suggest otherwise.
+
+Second, there is something of a cluster of authors towards the high end of the y-axis, consisting of Søren Kierkegaard, Jean-Jacques Rousseau, Vladimir Lenin (yes, Lenin is in the top 100), Ernst Cassirer, Jacques Lacan, Giorgio Agamben, Walter Benjamin, Alain Badiou, Jacques Ranciere and Axel Honneth. What I find curious about this cluster is that everyone in it (except perhaps for Lenin) is from Continental Europe. Indeed, this looks to be true more generally: The median rank ranges of authors from Continental Europe tend to be larger than for authors from elsewhere (mostly the UK and North America).
+
+I must admit I’m not quite sure what’s going on here. An author’s region of birth correlates with the sub-field cluster in which the author has been most the most influential (i.e., where their median rank is highest). Figure 3 shows that for authors from Continental Europe, the most influential sub-field cluster tends to be Philosophical Traditions, while for authors from the UK and North America, the most influential sub-field clusters tend to be SL&M or LEM&M. (Value Theory and HoWP seem to be somewhere in between.) If authors who are most influential in Philosophical Traditions tend to be much less influential in SL&M and LEM&M (a reasonable assumption; see Figure 4), then it would make sense that the ranges associated with these author’s median ranks will tend to be quite large. However, this only explains the clustering we see in Figure 3 if the reverse is not true–that is, if authors who are most influential in LEM&M and/or SL&M are _not_ generally much less influential in Philosophical Traditions. This strikes me as implausible (though bear in mind that this might only reflect my own ignorance), but I’m not sure how else to explain these results.
+
+![Figure 3. Range of median ranks for top 100 authors with colors indicating each author's most influential sub-field cluster(s).]({{site.url}}/something-of-crunch/assets/images/2024-11-19/fig3.png){: width="100%"}
+<p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 3. Range of median ranks for top 100 authors with colors indicating each author's most influential sub-field cluster(s).</p>
+<br>
+
+Does influence in one sub-field cluster predict influence in another? Yes. Figure 3 shows pair-wise correlations between median ranks in different sub-field clusters.
+
+![Figure 4. Pair-wise correlations between median ranks in different sub-field clusters.]({{site.url}}/something-of-crunch/assets/images/2024-11-19/fig4.png){: width="50%"}
+<p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 4. Pair-wise correlations between median ranks in different sub-field clusters.</p>
+<br>
 
 
 
