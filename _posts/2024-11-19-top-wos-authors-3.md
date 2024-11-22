@@ -21,7 +21,7 @@ Compare this to a figure like Kant (the overall #2). The difference between Kant
 
 So far, I have been discussing authors whose influence in _one_ sub-field cluster outstrips their influence in _all_ other sub-field clusters. However, an author might also have been (much) more influential in two or more sub-field clusters than in one or more of the other sub-field clusters. Conversely, even an author who’s been (much) more influential in one sub-field cluster than in the others might still have had a similar amount of influence in these other clusters. What would be useful, then, is to also have a look at the spread of the median ranks for different authors. I therefore calculated for each author in the top 100 the range [max(rank)-min(rank)] of their median ranks. Figure 2 shows the results.
 
-![Figure 2. Range of median ranks for top 100 authors.]({{site.url}}/something-of-crunch/assets/images/2024-11-19/fig2.png){: width="100%"}
+![Figure 2. Range of median ranks for top 100 authors.]({{site.url}}/something-of-crunch/assets/images/2024-11-19/fig2.png){: width="90%"}
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 2. Range of median ranks for top 100 authors.</p>
 <br>
 
@@ -31,7 +31,7 @@ Second, there is something of a cluster of authors towards the high end of the y
 
 I must admit I’m not quite sure what’s going on here. An author’s region of birth correlates with the sub-field cluster in which the author has been most the most influential (i.e., where their median rank is highest). Figure 3 shows that for authors from Continental Europe, the most influential sub-field cluster tends to be Philosophical Traditions, while for authors from the UK and North America, the most influential sub-field clusters tend to be SL&M or LEM&M. (Value Theory and HoWP seem to be somewhere in between.) If authors who are most influential in Philosophical Traditions tend to be less influential in SL&M and LEM&M (a reasonable assumption; see Figure 4), then it would make sense that the ranges associated with these author’s median ranks will tend to be quite large. However, this only explains the clustering we see in Figure 3 if the reverse is not true–that is, if authors who are most influential in LEM&M and/or SL&M are _not_ generally much less influential in Philosophical Traditions. This strikes me as implausible (this might just reflect my own ignorance, though), but I’m not sure how else to explain these results.
 
-![Figure 3. Range of median ranks for top 100 authors with colors indicating each author's most influential sub-field cluster(s).]({{site.url}}/something-of-crunch/assets/images/2024-11-19/fig3.png){: width="100%"}
+![Figure 3. Range of median ranks for top 100 authors with colors indicating each author's most influential sub-field cluster(s).]({{site.url}}/something-of-crunch/assets/images/2024-11-19/fig3.png){: width="90%"}
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 3. Range of median ranks for top 100 authors with colors indicating each author's most influential sub-field cluster(s).</p>
 <br>
 
