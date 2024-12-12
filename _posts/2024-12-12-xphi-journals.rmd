@@ -1,3 +1,8 @@
+---
+title: "Which Journals Publish Experimental Philosophy?"
+date: 2024-12-12
+---
+
 Hanging around experimental philosophers at times, I've been asked more than once if I knew which journals are happy to publish XPhi. I usually point people to Li and Zhu (2023), who got the meta-data for all articles published between 2001 and 2020 that are categorized as Experimental Philosophy on PhilPapers, and then generated a list of the twenty journals that have published the most these articles (Table 2). It occurs to me, however, that this list could do with an update. Also, Li and Zhu do not report which might interest experimental philosophers looking for a place to publish.
 
 I downloaded the meta-data for all entries PhilPapers categorizes as Experimental Philosophy, restricted the dataset to articles published between 2000 and 2024 (excluding forthcoming), and removed obvious rubbish data (e.g., journal name = 'IsFrontMatter: put either 1 or 0: 1 if this is not an article but a \"front matter\" type of entry, e.g. a list of books received, 0 otherwise'). This left me with 1,901 articles from 449 journals. Below are these journals ranked by the number of XPhi articles they've published (I omit journals that have published fewer than 5 articles):
