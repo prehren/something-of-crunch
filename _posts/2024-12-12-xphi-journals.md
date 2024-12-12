@@ -161,13 +161,13 @@ A few observations. First, _Review of Philosophy and Psychology_ is the closest 
 
 To end, I thought it'd be interesting to see how the rate at which XPhi articles get published in different has changes over the years. Figure 1 (below) shows the trajectory of the proportion of XPhi articles since 2000 for the twenty journals that published the highest overall proportion of XPhi articles during that time.
 
-![Figure 1. Proportion of XPhi articles since 2000 for the top 20 journals by overall proportion.]({{site.url}}/something-of-crunch/assets/images/2024-12-12/figure1.png){: width="100%"}
+![Figure 1. Proportion of XPhi articles since 2000 for the top 20 journals by overall proportion.]({{site.url}}/something-of-crunch/assets/images/2024-12-12/figure1.png){: width="85%"}
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 1. Proportion of XPhi articles since 2000 for the top 20 journals by overall proportion.</p>
 <br>
 
 One thing that strikes me about Figure 1 is that for a number of these journals, the proportion of XPhi articles seems to have been on the decline for the past 10 years or so. Conversely, there do not seem to be very many journals for which the proportion of XPhi articles is currently on a clear upward trajectory. Figure 2, which shows the journal mean proportion (that is, the mean of individual journal proportions) of XPhi articles since 2000, confirms this impression: While the proportion of XPhi articles initially rose steeply for the first ten years or so, the trajectory has since flattened and may even be starting to decline.
 
-![Figure 2. Journal mean proportion of XPhi articles since 2000.]({{site.url}}/something-of-crunch/assets/images/2024-12-12/figure2.png){: width="50%"}
+![Figure 2. Journal mean proportion of XPhi articles since 2000.]({{site.url}}/something-of-crunch/assets/images/2024-12-12/figure2.png){: width="45%"}
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 2. Journal mean proportion of XPhi articles since 2000.</p>
 <br>
 
