@@ -159,9 +159,9 @@ There are a number of journals on this list that I don't think many people would
 
 A few observations. First, currently, Review of Philosophy and Psychology is the closest thing there is to a dedicated XPhi journal---~16% of the articles published there since the journal's renaming in 2010 have been in experimental philosophy. This is more than twice the proportion of XPhi articles that got published in Philosophical Psychology (#2). So when Li and Zhu (p. 37) write that "Philosophical Psychology is by far the most popular journal among experimental philosophers," this isn't entirely accurate. Second, compared to the ranking based on raw counts, older high-profile generalist journals like Synthese, Philosophical Studies, Analysis, PPR, Erkenntnis and Australasian Journal of Philosophy tended to end up lower down the list, while younger high-profile generalist journals like Ergo and Thought tended to move up. Third, there are not a lot of journals (18 out of many hundreds on PhilPapers) for which XPhi articles make up more than 1% of all published articles. So while XPhi has certainly grown in visibility since the 2000s (see below), it is nonetheless still relatively niche.
 
-To end, I thought it'd be interesting to see how the rate at which XPhi articles get published in different has changes over the years. Figure 1 (below) shows the proportion of XPhi articles in the first 20 journals since 2000.
+To end, I thought it'd be interesting to see how the rate at which XPhi articles get published in different has changes over the years. Figure 1 (below) shows the trajectory of the proportion of XPhi articles since 2000 for the twenty journals that published the highest overall proportion of XPhi articles during that time.
 
-![Figure 1. Median rank of the top 100 authors by journal sub-field cluster.]({{site.url}}/something-of-crunch/assets/images/2024-11-19/fig1.png){: width="100%"}
+![Figure 1. Proportion of XPhi articles since 2000 for the twenty journals that published the highest overall proportion of XPhi articles in that time.]({{site.url}}/something-of-crunch/assets/images/2024-11-19/fig1.png){: width="100%"}
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 1. Median rank of the top 100 authors by journal sub-field cluster.</p>
 <br>
 
@@ -170,3 +170,7 @@ One thing that strikes me about Figure 1 is that for a number of these journals,
 ![Figure 1. Median rank of the top 100 authors by journal sub-field cluster.]({{site.url}}/something-of-crunch/assets/images/2024-11-19/fig1.png){: width="100%"}
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 1. Median rank of the top 100 authors by journal sub-field cluster.</p>
 <br>
+
+**References**
+
+<div style="text-indent: -2em; padding-left: 2em;">Li, Jincai, and Xiaozhen Zhu. 2023. “Twenty Years of Experimental Philosophy Research.” <em>Metaphilosophy</em> 54 (1): 29–53. https://doi.org/10.1111/meta.12602.</div>
