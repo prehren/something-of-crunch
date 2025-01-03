@@ -1,7 +1,6 @@
 ---
 title: "Measuring Conceptual Change in Philosophy: A Corpus Study"
 date: 2025-01-01
-usemathjax: true
 ---
 
 Last year, together with two collaborators (Lucien Baumgartner; Krzysztof S&#281;kowski), I worked on a project that aimed to track the semantic disruptiveness of influential philosophy publications. We presented the material a couple of times, but ultimately decided that the project was not worth pursuing. Still, I thought the research was interesting enough methodologically to merit some sort of write up. That&#8217;s what this post is (though I&#8217;m mostly going to focus on the parts that I contributed).
@@ -10,7 +9,7 @@ The motivation for the project had to do with <em>conceptual engineering </em>(C
 
 While major problems still remain with testing for conceptual change directly (e.g., Recchia et al., 2017; Hengchen et al., 2021), conceptual change tends to (though need not) go hand in hand with semantic change. This is useful because there are a number of well-established methods to detect and measure semantic change (for a survey, see, Tahmasebi et al., 2019). We chose to use (neural) word embeddings with temporal referencing (Dubossarsky et al., 2019); I&#8217;ll explain what that means in a bit.
 
-To construct our corpus, I used a Python script to download the pdfs of all articles published in six [high-profile, generalist philosophy journals](https://leiterreports.typepad.com/blog/2022/07/best-general-philosophy-journals-2022.html)(<em>Australasian Journal of</em> <em>Philosophy</em>; <em>Analysis</em>; <em>Mind</em>; <em>Noûs</em>; <em>Philosophical Studies</em>; <em>Synthese</em>) between 1971 and 2021. We only included full-length, original articles (so no abstracts, book reviews, errata, etc.). I then removed cover pages, headers and footers, converted the pdfs to plain text and cleaned up the resulting text files. Table 1 shows the number of articles from each journal, as well as the total number of articles.
+To construct our corpus, I used a Python script to download the pdfs of all articles published in six [high-profile, generalist philosophy journals](https://leiterreports.typepad.com/blog/2022/07/best-general-philosophy-journals-2022.html) (<em>Australasian Journal of</em> <em>Philosophy</em>; <em>Analysis</em>; <em>Mind</em>; <em>Noûs</em>; <em>Philosophical Studies</em>; <em>Synthese</em>) between 1971 and 2021. We only included full-length, original articles (so no abstracts, book reviews, errata, etc.). I then removed cover pages, headers and footers, converted the pdfs to plain text and cleaned up the resulting text files. Table 1 shows the number of articles from each journal, as well as the total number of articles.
 
 <table>
        <tr>
