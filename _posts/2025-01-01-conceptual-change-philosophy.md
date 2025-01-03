@@ -49,7 +49,7 @@ To construct our corpus, I used a Python script to download the pdfs of all arti
        </tr>
 </table>
 
-Next, we constructed three sub-corpora, one for each target publication <em>T</em>. We reasoned that we should not expect semantic changes to show up across all of philosophy, just in articles on topics related to that of <em>T</em>. To define the limits of these sub-corpora, I used two restrictions. The first restriction is based on PhilPapers categories. PhilPapers is a &#8220;comprehensive index and bibliography of philosophy maintained by the community of philosophers.&#8221; In addition to lots of other useful meta-data, PhilPapers sorts many of its entries into one or more of &#8220;the traditional fields of philosophy&#8221; (both, https://philpapers.org/help/categorization.html; accessed Sept 11, 2023)&#8211;philosophy of mind, normative ethics, philosophy of physics, Asian philosophy, 17th/18th century philosophy, etc. 81.4% of articles in our dataset had at least one field listed. For each <em>T</em>, I excluded all articles that did not share at least one field in common with <em>T</em>.
+Next, we constructed three sub-corpora, one for each target publication <em>T</em>. We reasoned that we should not expect semantic changes to show up across all of philosophy, just in articles on topics related to that of <em>T</em>. To define the limits of these sub-corpora, I used two restrictions. The first restriction is based on PhilPapers categories. PhilPapers is a &#8220;comprehensive index and bibliography of philosophy maintained by the community of philosophers.&#8221; In addition to lots of other useful meta-data, PhilPapers sorts many of its entries into one or more of &#8220;the traditional fields of philosophy&#8221; (both, [https://philpapers.org/help/categorization.html](https://philpapers.org/help/categorization.html); accessed Sept 11, 2023)&#8211;philosophy of mind, normative ethics, philosophy of physics, Asian philosophy, 17th/18th century philosophy, etc. 81.4% of articles in our dataset had at least one field listed. For each <em>T</em>, I excluded all articles that did not share at least one field in common with <em>T</em>.
 
 While a good start, this first restriction alone would likely have been too permissive. Consider Chalmers (1996), which is categorized as Philosophy of Cognitive Science and Philosophy of Mind. Most of the articles published in these two fields are not on belief, and so to keep them all in the sub-corpus would plausibly have muddied the waters. I therefore introduced a second restriction. For each of the three sub-corpora (including <em>T</em>; restricted to nouns), I used LDA (with 2000 Gibbs samples) to identify major topics. As the threshold probability, I more or less arbitrarily picked 0<em>.</em>1 (this resulted in 2 major topics for each of our target publications): If the posterior probability of a topic in a article was at least 0<em>.</em>1, then I considered that topic to be one of the major topics of that article. Figure 1 shows the results. I then restricted each sub-corpus to articles that shared at least one major topic with <em>T</em>. This left us with 384 texts for Kripke (1980) (2861310 words); 281 texts for Chalmers (1996) (2652613 words); and 498 texts for Clark and Chalmers (1998) (4226818 words).
 
@@ -71,7 +71,99 @@ Recall that our goal was to investigate if the meaning of any of our three targe
 
 Are there identifiable points at which the meaning of our <em>w</em><sub>T</sub>s has changed? To test for this, we used change-point detection. There are many methods to look for change-points in time series data (for a survey, see, Aminikhanghahi and Cook, 2017); here, we used kernel-based change point analysis with a linear kernel. The basic idea with this method is to average all the values in the time series within a certain window of time immediately before and after a given candidate change-point, and then to check if the difference between these two means exceeds a certain threshold. If it does, a (local) change-point has been detected. Table 2 shows the results, for the word2vec embeddings as well as the BERT embeddings. We find that the only <em>w</em><sub>T</sub> for which there is evidence of the presence of local change-points across both models is &#8216;consciousness.&#8217; (Lucien had BERT generate two different kinds of embedding, narrow word embeddings, for which the model considers a relatively small window of tokens around each word, and broad usage embeddings, for which the model considers a much larger window of tokens around each word [in this case, 128]).
 
-TABLE HERE
+<table>
+    <tr>
+        <td class="thead depvarhead firsttablerow leftalign" style="font-weight:bold; font-style:normal;">Embedding</td>
+        <td class="thead depvarhead firsttablerow leftalign" style="font-weight:bold; font-style:normal;"><em>w</em><sub>T</sub></td>
+        <td class="thead depvarhead firsttablerow centeralign" style="font-weight:bold; font-style:normal;">Window</td>
+        <td class="thead depvarhead firsttablerow leftalign" style="font-weight:bold; font-style:normal;">Change-points</td>
+    </tr>
+    <th colspan="4" class="depvarhead">word2vec</th>
+    <tr>
+       <td class="tdata firsttablecol">---</td>
+        <td class="tdata">consciousness</td>
+        <td class="tdata centeralign">4</td>
+        <td class="tdata">2000</td>
+    </tr>
+    <tr>
+       <td class="tdata firsttablecol">---</td>
+        <td class="tdata">consciousness</td>
+        <td class="tdata centeralign">5</td>
+        <td class="tdata">1998</td>
+    </tr>
+    <tr>
+       <td class="tdata firsttablecol">---</td>
+        <td class="tdata">reference</td>
+        <td class="tdata centeralign">2</td>
+        <td class="tdata">1996</td>
+    </tr>
+    <tr>
+       <td class="tdata firsttablecol">---</td>
+        <td class="tdata">reference</td>
+        <td class="tdata centeralign">3</td>
+        <td class="tdata">1996</td>
+    </tr>
+    <tr>
+       <td class="tdata firsttablecol">---</td>
+        <td class="tdata">reference</td>
+        <td class="tdata centeralign">4</td>
+        <td class="tdata">1997</td>
+    </tr>
+    <tr>
+       <td class="tdata firsttablecol">---</td>
+        <td class="tdata">reference</td>
+        <td class="tdata centeralign">5</td>
+        <td class="tdata">1996</td>
+    </tr>
+    </tr>
+    <th colspan="4" class="depvarhead firstsumrow">BERT</th>
+    <tr>
+    <tr>
+       <td class="tdata firsttablecol">broad</td>
+        <td class="tdata">consciousness</td>
+        <td class="tdata centeralign">2</td>
+        <td class="tdata">1993</td>
+    </tr>
+    <tr>
+       <td class="tdata firsttablecol">broad</td>
+        <td class="tdata">consciousness</td>
+        <td class="tdata centeralign">3</td>
+        <td class="tdata">1992</td>
+    </tr>
+    <tr>
+       <td class="tdata firsttablecol">broad</td>
+        <td class="tdata">consciousness</td>
+        <td class="tdata centeralign">4</td>
+        <td class="tdata">1993</td>
+    </tr>
+    <tr>
+       <td class="tdata firsttablecol">broad</td>
+        <td class="tdata">consciousness</td>
+        <td class="tdata centeralign">5</td>
+        <td class="tdata">1994</td>
+    </tr>
+    <tr>
+       <td class="tdata firsttablecol">narrow</td>
+        <td class="tdata">consciousness</td>
+        <td class="tdata centeralign">2</td>
+        <td class="tdata">1976, 1977, 1981, 1983, 1988, 1991, 1993, 1994, 1998</td>
+    </tr>
+    <tr>
+       <td class="tdata firsttablecol">narrow</td>
+        <td class="tdata">consciousness</td>
+        <td class="tdata centeralign">3</td>
+        <td class="tdata">1976, 1983, 1987, 1994, 1997</td>
+    </tr>
+    <tr>
+       <td class="tdata firsttablecol">narrow</td>
+        <td class="tdata">consciousness</td>
+        <td class="tdata centeralign">4</td>
+        <td class="tdata">1998</td>
+    </tr>
+    <tr>
+       <th colspan="4" class="thead firsttablerow"></th>
+    </tr>
+</table>
 
 Next, we wanted to investigate the possible role of our target texts. Recall that we chose our three <em>w</em><sub>T</sub>s because each features prominently in a very influential book or article published during the last 50 years that many see as having done much to change the concept in question. To do so, we relied on the idea of a text&#8217;s <em>disruptiveness </em>with respect to some word&#8217;s meaning: when a text <em>T </em>is disruptive with respect to a given word&#8217;s meaning, then that word&#8217;s meaning will be tend to be more similar to its meaning in texts published after <em>T </em>(because <em>T </em>had an influence on these texts) than to texts published before <em>T</em> (see, Hogenbirk, 2023). To quantify disruptiveness, we defined a disruptiveness score <em>D</em>:
 
