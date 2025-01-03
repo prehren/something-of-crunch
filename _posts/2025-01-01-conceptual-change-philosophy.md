@@ -217,3 +217,5 @@ The second problem is a fundamental methodological problem. To be persuaded that
 <div style="text-indent: -2em; padding-left: 2em;">Recchia, G., Jones, E., Nulty, P., Regan, J., &amp; De Bolla, P. (2017). Tracing Shifting Conceptual Vocabularies Through Time. In P. Ciancarini, F. Poggi, M. Horridge, J. Zhao, T. Groza, M.&#x00A0;C. Suarez-Figueroa, M. d&#8217;Aquin, &amp; V. Presutti (Eds.), <em>Knowledge Engineering and Knowledge Management </em>(pp.&#x00A0;19&#8211;28, Vol.&#x00A0;10180). Springer International Publishing. https://doi.org/10.1007/978-3-319-58694-6_2.</div>
 <div style="text-indent: -2em; padding-left: 2em;">Tahmasebi, N., Borin, L., &amp; Jatowt, A. (2019). Survey of Computational Approaches to Lexical Semantic Change. https://doi.org/10.48550/arXiv.1811.06278.</div>
 <div style="text-indent: -2em; padding-left: 2em;">Tarski, A. (1936). Der Wahrheitsbegriff in den Formalisierten Sprachen. <em>Studia</em> <em>Philosophica</em>, <em>1</em>, 261&#8211;405.</div>
+<br>
+<br>
