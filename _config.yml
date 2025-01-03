@@ -41,4 +41,4 @@ minima:
   # solarized	         Adaptive skin for solarized color scheme skins.
   skin: solarized-dark
 
-usemathjax: true
+markdown: kramdown
