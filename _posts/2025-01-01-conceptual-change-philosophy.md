@@ -78,12 +78,14 @@ Are there identifiable points at which the meaning of our <em>w</em><sub>T</sub>
         <td class="thead depvarhead firsttablerow centeralign" style="font-weight:bold; font-style:normal;">Window</td>
         <td class="thead depvarhead firsttablerow leftalign" style="font-weight:bold; font-style:normal;">Change-points</td>
     </tr>
-    <th colspan="4" class="depvarhead">word2vec</th>
+    <tr>
+           <th colspan="4" class="depvarhead">word2vec</th>
+    </tr>
     <tr>
        <td class="tdata firsttablecol">---</td>
-        <td class="tdata">consciousness</td>
-        <td class="tdata centeralign">4</td>
-        <td class="tdata">2000</td>
+       <td class="tdata">consciousness</td>
+       <td class="tdata centeralign">4</td>
+       <td class="tdata">2000</td>
     </tr>
     <tr>
        <td class="tdata firsttablecol">---</td>
