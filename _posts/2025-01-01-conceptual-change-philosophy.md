@@ -57,7 +57,7 @@ Figure <a href="#x1-29r3">3</a> shows <em>D</em>-score rankings for our three su
 
 So far, I have used <em>o</em><sub>before</sub> = <em>o</em><sub>after</sub> = 0 and <em>r </em>= 10. Perhaps it takes longer than 10 years for a text&#8217;s disruptiveness to be felt in the relevant literature. To investigate this, I re-calculated the <em>D</em>-scores using a range of different offsets <em>o</em><sub>after</sub>. Note that the maximum possible value of <em>o</em><sub>after</sub> depends on a text&#8217;s year of publication. Figure <a href="#x1-34r5">5</a> shows the results. The figure suggests that the choice of <em>o</em><sub>after</sub> does not have a major impact. 
 
-![Figure 5. $D$-scores for different values of $o_{\text{after}}$ ($r = 10$; target texts in red; average $D$-score in black).]({{site.url}}/something-of-crunch/assets/images/2025-01-01/figure1.png){: width="95%"}
+![Figure 5. $D$-scores for different values of $o_{\text{after}}$ ($r = 10$; target texts in red; average $D$-score in black).]({{site.url}}/something-of-crunch/assets/images/2025-01-01/figure4.png){: width="95%"}
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 5. $D$-scores for different values of $o_{\text{after}}$ ($r = 10$; target texts in red; average $D$-score in black).</p>
 <br>
 
