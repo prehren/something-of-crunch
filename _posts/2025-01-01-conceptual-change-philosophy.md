@@ -70,4 +70,33 @@ The second problem is a fundamental methodological problem. To be persuaded that
 **References**
 
 <div style="text-indent: -2em; padding-left: 2em;">Aminikhanghahi, S., &amp; Cook, D.&#x00A0;J. (2017). A survey of methods for time series change point detection. <em>Knowledge and Information Systems</em>, <em>51</em>(2), 339&#8211;367. https://doi.org/10.1007/s10115-016-0987-z.</div>
-<div style="text-indent: -2em; padding-left: 2em;">Aminikhanghahi, S., &amp; Cook, D.&#x00A0;J. (2017). A survey of methods for time series change point detection. <em>Knowledge and Information Systems</em>, <em>51</em>(2), 339&#8211;367. https://doi.org/10.1007/s10115-016-0987-z.</div>
+
+<div style="text-indent: -2em; padding-left: 2em;">Carnap, R. (1936). Testability and Meaning. <em>Philosophy of Science</em>, <em>3</em>(4), 419&#8211;471.</div>
+
+<div style="text-indent: -2em; padding-left: 2em;">Chalmers, D.&#x00A0;J. (1996). <em>The Conscious Mind: In Search of a Fundamental Theory</em>. Oxford University Press.</div>
+
+<div style="text-indent: -2em; padding-left: 2em;">Chalmers, D.&#x00A0;J. (2020). What is conceptual engineering and what should it be? <em>Inquiry</em>, 1&#8211;18. https://doi.org/10.1080/0020174X.2020.1817141.</div>
+
+<div style="text-indent: -2em; padding-left: 2em;">Clark, A., &amp; Chalmers, D. (1998). The Extended Mind. <em>Analysis</em>, <em>58</em>(1), 7&#8211;19. https://doi.org/10.1111/1467-8284.00096.</div>
+
+<div style="text-indent: -2em; padding-left: 2em;">Devlin, J., Chang, M.-W., Lee, K., &amp; Toutanova, K. (2019). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. https://doi.org/10.48550/arXiv.1810.04805.</div>
+
+<div style="text-indent: -2em; padding-left: 2em;">Dubossarsky, H., Hengchen, S., Tahmasebi, N., &amp; Schlechtweg, D. (2019). Time-Out: Temporal Referencing for Robust Modeling of Lexical Semantic Change. <em>Proceedings</em> <em>of the 57th Annual Meeting of the Association for Computational Linguistics</em>, 457&#8211;470. https://doi.org/10.18653/v1/P19-1044.</div>
+
+<div style="text-indent: -2em; padding-left: 2em;">Gettier, E.&#x00A0;L. (1963). Is justified true belief knowledge? <em>Analysis</em>, <em>23</em>(6), 121&#8211;123.</div>
+
+<div style="text-indent: -2em; padding-left: 2em;">Hengchen, S., Tahmasebi, N., Schlechtweg, D., &amp; Dubossarsky, H. (2021). Challenges for computational lexical semantic change. In N. Tahmasebi, L. Borin, A. Jatowt, Y. Xu, &amp; S. Hengchen (Eds.), <em>Computational approaches to semantic change</em> (pp.&#x00A0;341&#8211;372). Zenodo. https://doi.org/10.5281/ZENODO.5040241.</div>
+
+<div style="text-indent: -2em; padding-left: 2em;">Hogenbirk, H.&#x00A0;D. (2023). <em>Each book its own Babel: Conceptual unity and disunity in</em> <em>early modern natural philosophy</em>. University of Groningen. https://doi.org/10.33612/diss.849175103.</div>
+
+<div style="text-indent: -2em; padding-left: 2em;">Kripke, S.&#x00A0;A. (1980). <em>Naming and necessity</em>. Harvard University Press.</div>
+
+<div style="text-indent: -2em; padding-left: 2em;">Martinc, M., Montariol, S., Zosa, E., &amp; Pivovarova, L. (2020). Capturing Evolution in Word Usage: Just Add More Clusters? <em>Companion Proceedings of the Web Conference</em> <em>2020</em>, 343&#8211;349. https://doi.org/10.1145/3366424.3382186.</div>
+
+<div style="text-indent: -2em; padding-left: 2em;">Mikolov, T., Chen, K., Corrado, G., &amp; Dean, J. (2013). Efficient Estimation of Word Representations in Vector Space. https://doi.org/10.48550/arXiv.1301.3781.</div>
+
+<div style="text-indent: -2em; padding-left: 2em;">Recchia, G., Jones, E., Nulty, P., Regan, J., &amp; De Bolla, P. (2017). Tracing Shifting Conceptual Vocabularies Through Time. In P. Ciancarini, F. Poggi, M. Horridge, J. Zhao, T. Groza, M.&#x00A0;C. Suarez-Figueroa, M. d&#8217;Aquin, &amp; V. Presutti (Eds.), <em>Knowledge Engineering and Knowledge Management </em>(pp.&#x00A0;19&#8211;28, Vol.&#x00A0;10180). Springer International Publishing. https://doi.org/10.1007/978-3-319-58694-6_2.</div>
+
+<div style="text-indent: -2em; padding-left: 2em;">Tahmasebi, N., Borin, L., &amp; Jatowt, A. (2019). Survey of Computational Approaches to Lexical Semantic Change. https://doi.org/10.48550/arXiv.1811.06278.</div>
+
+<div style="text-indent: -2em; padding-left: 2em;">Tarski, A. (1936). Der Wahrheitsbegriff in den Formalisierten Sprachen. <em>Studia</em> <em>Philosophica</em>, <em>1</em>, 261&#8211;405.</div>
