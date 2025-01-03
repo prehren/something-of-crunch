@@ -79,7 +79,7 @@ Are there identifiable points at which the meaning of our <em>w</em><sub>T</sub>
         <td class="thead depvarhead firsttablerow leftalign" style="font-weight:bold; font-style:normal;">Change-points</td>
     </tr>
     <tr>
-           <th colspan="4" class="depvarhead">word2vec</th>
+       <th colspan="4" class="depvarhead">word2vec</th>
     </tr>
     <tr>
        <td class="tdata firsttablecol">---</td>
