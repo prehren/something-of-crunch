@@ -117,9 +117,6 @@ Are there identifiable points at which the meaning of our <em>w</em><sub>T</sub>
         <td class="tdata centeralign">5</td>
         <td class="tdata">1996</td>
     </tr>
-    </tr>
-    <th colspan="4" class="depvarhead firstsumrow">BERT</th>
-    <tr>
     <tr>
        <td class="tdata firsttablecol">broad</td>
         <td class="tdata">consciousness</td>
