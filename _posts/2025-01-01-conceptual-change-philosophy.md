@@ -1,6 +1,7 @@
 ---
 title: "Measuring Conceptual Change in Philosophy: A Corpus Study"
 date: 2025-01-01
+usemathjax: true
 ---
 
 Last year, together with two collaborators (Lucien Baumgartner; Krzysztof S&#281;kowski), I worked on a project that aimed to track the semantic disruptiveness of influential philosophy publications. We presented the material a couple of times, but ultimately decided that the project was not worth pursuing. Still, I thought the research was interesting enough methodologically to merit some sort of write up. That&#8217;s what this post is (though I&#8217;m mostly going to focus on the parts that I contributed).
