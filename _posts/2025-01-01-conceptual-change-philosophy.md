@@ -59,7 +59,7 @@ While a good start, this first restriction alone would likely have been too perm
 
 To create embeddings of our target words (<em>w</em><sub>T</sub>s), we used two common methods, <em>word2vec </em>(Mikolov et al., 2013) and <em>BERT </em>(Devlin et al., 2019).[^1] word2vec creates static embeddings (for each word, the model creates a single, context-independent vector), while embeddings created with BERT are context sensitive (the same word can get multiple different embedding vectors depending on its context in the text), and so we thought it might be nice to compare the two. I worked with word2vec, and so that&#8217;s what I&#8217;ll focus on. The process for BERT was similar, however, and I&#8217;ll mention how the BERT embeddings compared to the word2vec embeddings.
 
-[^1]: For visual introductions to these models, see https://jalammar.github.io/illustrated-word2vec/ and https://jalammar.github.io/illustrated-bert/.
+[^1]: For visual introductions to these models, see [https://jalammar.github.io/illustrated-word2vec/](https://jalammar.github.io/illustrated-word2vec/) and [https://jalammar.github.io/illustrated-bert/](https://jalammar.github.io/illustrated-bert/).
 
 To prepare our sub-corpora for training, I removed all stop words, words not in the English dictionary and single letter words. I also lemmatized and POS-tagged all texts. This was done because we were only interested in our target words as nouns, yet one of them (reference) can also be a verb.
 
