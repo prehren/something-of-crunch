@@ -33,7 +33,7 @@ Next, we wanted to investigate the possible role of our target texts. Recall tha
 
 ```math
 D_{T,w} = \frac{1}{n_{\text{after}}}\sum_{t|y_T+o_{\text{after}}<y_t\leq y_T+o_{\text{after}}+r}\cos(w_T, w_t)-\frac{1}{n_{\text{before}}}\sum_{t|y_T-o_{\text{before}}-r\leq y_t< y_T-o_{\text{before}}}\cos(w_T, w_t),
-```math
+```
 
 with <em>y</em><sub>i</sub> the year of text <em>i</em>&#8217;s publication, <em>o</em><sub>before</sub> and <em>o</em><sub>after</sub> offsets (how many years immediately before/after <em>T </em>are not to be included in the calculation), <em>r </em>the time window [how many years before/after <em>T </em>(minus/plus the offset) to include in the calculation], and <em>n</em><sub>before</sub> and <em>n</em><sub>after</sub> the numbers of text published in <em>r </em>before/after <em>T</em>. The interpretation of this score is that if <em>D &#x003E; </em>0, then the target text <em>T </em>was more similar to texts published after it than to texts before it (with respect to the meaning of <em>w</em>), and so it was disruptive. Figure <a href="#x1-29r3">3</a> shows <em>D</em>-score rankings for our three sub-corpora. None of the three target texts rank near the top; in fact, their <em>D</em>-scores are all negative. (The BERT embeddings yielded similar results.) Hence, we did not find evidence that any of our targets text were unusually disruptive with respect to their target words.
 
