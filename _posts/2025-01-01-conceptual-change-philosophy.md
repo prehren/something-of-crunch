@@ -54,7 +54,7 @@ Next, we constructed three sub-corpora, one for each target publication <em>T</e
 
 While a good start, this first restriction alone would likely have been too permissive. Consider Chalmers (1996), which is categorized as Philosophy of Cognitive Science and Philosophy of Mind. Most of the articles published in these two fields are not on belief, and so to keep them all in the sub-corpus would plausibly have muddied the waters. I therefore introduced a second restriction. For each of the three sub-corpora (including <em>T</em>; restricted to nouns), I used LDA (with 2000 Gibbs samples) to identify major topics. As the threshold probability, I more or less arbitrarily picked 0<em>.</em>1 (this resulted in 2 major topics for each of our target publications): If the posterior probability of a topic in a article was at least 0<em>.</em>1, then I considered that topic to be one of the major topics of that article. Figure 1 shows the results. I then restricted each sub-corpus to articles that shared at least one major topic with <em>T</em>. This left us with 384 texts for Kripke (1980) (2861310 words); 281 texts for Chalmers (1996) (2652613 words); and 498 texts for Clark and Chalmers (1998) (4226818 words).
 
-![Figure 1. Topic distributions with major topics (black); <em>k</em> is the total number of topics.]({{site.url}}/something-of-crunch/assets/images/2025-01-01/figure0.png){: width="90%"}
+![Figure 1. Topic distributions with major topics (black); <em>k</em> is the total number of topics.]({{site.url}}/something-of-crunch/assets/images/2025-01-01/figure0.png){: width="80%"}
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 1. Topic distributions with major topics (black); <em>k</em> is the total number of topics.</p>
 <br>
 
@@ -66,7 +66,7 @@ To prepare our sub-corpora for training, I removed all stop words, words not in 
 
 Recall that our goal was to investigate if the meaning of any of our three target words has changed perceptibly since 1971 in relevant parts of the philosophical literature. To do so, we used temporal referencing (Dubossarsky et al., 2019). The idea is simple: First, label your target word(s) with their time information; then, train a global model on the entire corpus. Since in our case, there were generally many articles per year, we decided to label target words not just with their year, but also with the article ID. So, for example, occurrences of &#8216;belief//NOUN&#8217; in Clark and Chalmers (1998) became &#8216;belief//NOUN_Analysis_1998_58_1_7-19&#8217;. For each of our three sub-corpora, I then trained a SGNS model (dim = 300, window = 10). To investigate semantic change, we traced the average pairwise cosine similarity over time. For years <em>y </em>and <em>y</em>+1, I calculated the pairwise cosine similarity between each of <em>w</em><sub>T</sub>&#8217;s embeddings in texts published in <em>y </em>(one for each text since word2vec generates static embeddings) and each of <em>w</em><sub>T</sub>&#8217;s embeddings in texts published in <em>y</em>+1, and then averaged these values. Figure 2 shows the results.
 
-![Figure 2. Average pairwise cosine similarities over time for our three target words; errorbars show 95\% confidence intervals.]({{site.url}}/something-of-crunch/assets/images/2025-01-01/figure1.png){: width="95%"}
+![Figure 2. Average pairwise cosine similarities over time for our three target words; errorbars show 95\% confidence intervals.]({{site.url}}/something-of-crunch/assets/images/2025-01-01/figure1.png){: width="75%"}
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 2. Average pairwise cosine similarities over time for our three target words; errorbars show 95\% confidence intervals.</p>
 <br>
 
@@ -189,7 +189,7 @@ Figure 3 shows <em>D</em>-score rankings for our three sub-corpora. None of the 
 
 So far, I have used <em>o</em><sub>before</sub> = <em>o</em><sub>after</sub> = 0 and <em>r </em>= 10. Perhaps it takes longer than 10 years for a text&#8217;s disruptiveness to be felt in the relevant literature. To investigate this, I re-calculated the <em>D</em>-scores using a range of different offsets <em>o</em><sub>after</sub>. Note that the maximum possible value of <em>o</em><sub>after</sub> depends on a text&#8217;s year of publication. Figure 5 shows the results. The figure suggests that the choice of <em>o</em><sub>after</sub> does not have a major impact. 
 
-![Figure 5. <em>D</em>-scores for different values of <em>o</em><sub>after</sub> (<em>r</em> = 10; target texts in red; average <em>D</em>-score in black).]({{site.url}}/something-of-crunch/assets/images/2025-01-01/figure4.png){: width="95%"}
+![Figure 5. <em>D</em>-scores for different values of <em>o</em><sub>after</sub> (<em>r</em> = 10; target texts in red; average <em>D</em>-score in black).]({{site.url}}/something-of-crunch/assets/images/2025-01-01/figure4.png){: width="75%"}
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 5. <em>D</em>-scores for different values of <em>o</em><sub>after</sub> (<em>r</em> = 10; target texts in red; average <em>D</em>-score in black).</p>
 <br>
 
