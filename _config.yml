@@ -40,5 +40,3 @@ minima:
   # solarized-dark	   Dark variant of solarized color scheme.
   # solarized	         Adaptive skin for solarized color scheme skins.
   skin: solarized-dark
-
-markdown: kramdown
