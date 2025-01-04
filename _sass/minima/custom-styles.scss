@@ -26,6 +26,7 @@ table {
   th {
     background-color: transparent;
     border: none;
+    padding:0.1cm;
   }
   td {
     border: none;
@@ -36,10 +37,10 @@ table {
   text-align:center;
   font-style:normal;
   font-weight:bold;
-  padding:0.2cm;
+  padding:0.1cm;
 }
 .tdata { 
-  padding:0.2cm;
+  padding:0.1cm;
   text-align:left;
   vertical-align:top;
 }
