@@ -28,34 +28,33 @@ How unusual is this? Perhaps the LEMM-ing fields are just more popular than the 
 One way to quantify *how* over-represented the LEMM-ing fields are is to calculate their representativeness ratio *R*, defined as the propotion of LEM&M articles in the top generalist journals divided by the proportion of LEM&M articles in other philosophy journals. _R_ > 1 indicates over-representation; _R_ < 1 indicates under-representation. The table below shows _R_ for philosophy's five main sub-field clusters.
 
 <table style="border-collapse: collapse; width: auto; table-layout:auto; margin-left:auto;margin-right:auto;">
-<thead>
-<tr class="header">
-<th align="left">Sub-field cluster</th>
-<th align="right"><span class="math inline"><em>R</em></span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">History of Western Philosophy</td>
-<td align="right">0.30</td>
-</tr>
-<tr class="even">
-<td align="left">LEM&amp;M</td>
-<td align="right">2.39</td>
-</tr>
-<tr class="odd">
-<td align="left">Philosophical Traditions</td>
-<td align="right">0.06</td>
-</tr>
-<tr class="even">
-<td align="left">SL&amp;M</td>
-<td align="right">0.64</td>
-</tr>
-<tr class="odd">
-<td align="left">Value Theory</td>
-<td align="right">0.80</td>
-</tr>
-</tbody>
+  <tr>
+    <td class="thead depvarhead firsttablerow leftalign" style="font-weight:bold; font-style:normal;">Sub-field cluster</td>
+    <td class="thead depvarhead firsttablerow" style="font-weight:bold; font-style:normal;"><em>R</em></td>
+  </tr>
+  <tr>
+    <td class="tdata firsttablecol">History of Western Philosophy</td>
+    <td class="tdata rightalign">0.30</td>
+  </tr>
+  <tr>
+    <td class="tdata firsttablecol">LEM&amp;M</td>
+    <td class="tdata rightalign">2.39</td>
+  </tr>
+  <tr>
+    <td class="tdata firsttablecol">Philosophical Traditions</td>
+    <td class="tdata rightalign">0.06</td>
+  </tr>
+  <tr>
+    <td class="tdata firsttablecol">SL&amp;M</td>
+    <td class="tdata rightalign">0.64</td>
+  </tr>
+  <tr>
+    <td class="tdata firsttablecol">Value Theory</td>
+    <td class="tdata rightalign">0.80</td>
+  </tr>
+  <tr>
+    <th colspan="2" class="thead firsttablerow"></th>
+  </tr>
 </table>
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Table 1. Representativeness index <em>R</em> for philosophy’s five main sub-field clusters.</p>
 <br>
