@@ -161,13 +161,13 @@ A few observations. First, _Review of Philosophy and Psychology_ is the closest 
 
 To end, I thought it'd be interesting to see how the rate at which XPhi articles get published has changed over time. Figure 1 (below) shows the trajectory of the proportion of XPhi articles since 2000 for the twenty journals that published the highest overall proportion of XPhi articles during that time.
 
-![Figure 1. Proportion of XPhi articles since 2000 for the top 20 journals by overall proportion.]({{site.url}}/something-of-crunch/assets/images/2024-12-12/figure1.png){: width="85%"}
+![Figure 1. Proportion of XPhi articles since 2000 for the top 20 journals by overall proportion.]({{site.url}}/something-of-crunch/assets/images/2024-12-12/figure1NEW.png){: width="85%"}
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 1. Proportion of XPhi articles since 2000 for the top 20 journals by overall proportion.</p>
 <br>
 
 One thing that strikes me about Figure 1 is that for a number of these journals, the proportion of XPhi articles seems to have been on the decline for the past 10 years or so. Conversely, there do not seem to be very many journals (among these 20) for which the proportion of XPhi articles is currently on a clear upward trajectory (_AJOB Empirical Bioethics_, maybe _Synthese_, maybe _Inquiry_). Figure 2, which shows the journal mean proportion (that is, the mean of individual journal proportions for each time bin) of XPhi articles since 2000, confirms this impression to some extent: While the mean proportion of XPhi articles rose very steeply for the first ten years or so, it has since plateaued and may even be starting to decline (though more time will need to pass before it is possible to make that determination with any sort of confidence).
 
-![Figure 2. Journal mean proportion of XPhi articles since 2000.]({{site.url}}/something-of-crunch/assets/images/2024-12-12/figure2.png){: width="45%"}
+![Figure 2. Journal mean proportion of XPhi articles since 2000.]({{site.url}}/something-of-crunch/assets/images/2024-12-12/figure2NEW.png){: width="45%"}
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 2. Journal mean proportion of XPhi articles since 2000.</p>
 <br>
 
