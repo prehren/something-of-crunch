@@ -16,16 +16,9 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   <!-- Auto resize IFrames -->
-  <script type="text/javascript">
-    function resizeIFrameToFitContent( iFrame ) {
-      iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
-      iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
-      console.log(iFrame.height)
+  <script>
+    function resizeIframe(obj) {
+      obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
     }
-    window.addEventListener('DOMContentLoaded', function(e) {
-      var iFrame = document.getElementById( 'IFrameThatAutoResizes' );
-      resizeIFrameToFitContent( iFrame );
-    } );
   </script>
-
 </head>
