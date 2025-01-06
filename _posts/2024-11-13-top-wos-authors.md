@@ -604,7 +604,7 @@ A brief comment on that last observation: Schwitzgebel makes it clear that his r
 
 Since the data are longitudinal, we can also look at how citation rates for different authors changed during the last 50 years. Figure 1 shows the top 25 ranked authors over time (bottom panel). The top panel shows all authors who made it into the top 25 at one point in time or another (darker gray). The figure is interactive; hover over a bar, and it will highlight the corresponding rank trajectory over time (and vice versa).
 
-<iframe src="https://prehren.github.io/something-of-crunch/assets/html/2024-11-13/figure1NEW.html" title="Figure 1. Development over time of the top 25." style="border-style:none;height:0;overflow:hidden;" onload="resizeIframe(this)"></iframe>
+<iframe src="https://prehren.github.io/something-of-crunch/assets/html/2024-11-13/figure1NEW.html" title="Figure 1. Development over time of the top 25." style="border-style:none;height:0;overflow:hidden;width:100%;" onload="resizeIframe(this)"></iframe>
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 1. Development over time of the top 25.</p>
 <br>
 
