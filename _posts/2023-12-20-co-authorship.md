@@ -9,15 +9,13 @@ I find this a little odd, given how often I’ve heard it stressed that bouncing
 
 A while ago, someone at a workshop I was at suggested that philosophy has in fact become more collaborative in recent decades. Is this true? In Figure 1, I plot the proportions of philosophy articles with 1, 2, 3, 4 and 5 or more authors since 1975.
 
-![Figure 1. Proportion of philosophy articles with 1, 2, 3, 4 and 5 or more authors since 1975.]({{site.url}}/something-of-crunch/assets/images/2023-12-20/figure1.png){: width="100%"}
+![Figure 1. Proportion of philosophy articles with 1, 2, 3, 4 and 5 or more authors since 1975.]({{site.url}}/something-of-crunch/assets/images/2023-12-20/figure1NEW.png){: width="100%"}
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 1. Proportion of philosophy articles with 1, 2, 3, 4 and 5 or more authors since 1975.</p>
-<br>
 
 I also calculated the journal average number of authors for articles published since 1975. Figure 2 shows the results, along with the range (that is, the range of values for the mean number of authors in all journals per year), standard deviation and 95% confidence intervals.
 
-![Figure 2. Journal average number of authors since 1975.]({{site.url}}/something-of-crunch/assets/images/2023-12-20/figure2.png)
+![Figure 2. Journal average number of authors since 1975.]({{site.url}}/something-of-crunch/assets/images/2023-12-20/figure2NEW.png)
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 2. Journal average number of authors since 1975.</p>
-<br>
 
 Even though the vast majority of philosophy articles today are still single-authored, philosophy has indeed become somewhat more collaborative (in terms of the number of authors on published philosophy papers). The percentage of single-authored philosophy articles has fallen from 96.5% to 83.5%. Likewise, the journal average number of authors has increased since 1975, from M = 1.04 to M = 1.21.
 
@@ -38,7 +36,6 @@ Figure 3 shows the average number of authors since 1975 broken up by sub-field c
 
 ![Figure 3. Average number of authors over time by sub-field cluster (A), journal ranking (B) and purity (C); shaded areas show 95% confidence intervals.]({{site.url}}/something-of-crunch/assets/images/2023-12-20/figure3.png)
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 3. Average number of authors over time by sub-field cluster (A), journal ranking (B) and purity (C); shaded areas show 95% confidence intervals.</p>
-<br>
 
 All three sub-figures suggest differences in trajectories between category levels. To statistically test for these (potential) differences, I used a negative binomial model (to account for over-dispersion) with the number of co-authors (i.e., the number of authors minus one) as the outcome and year, sub-field cluster, journal ranking and journal purity, and their interactions with year as predictors. Here are the results:
 
@@ -156,7 +153,6 @@ Investigating 3. is a bit more tricky since this requires a way of identifying a
 
 ![Figure 4. Percentage of articles since 1975 in six journals that reported empirical research (inset figure); average number of authors since 1975 on articles that reported empirical research vs. regular philosophy articles (main figure). Shaded areas show 95% CI (note that before 2001-5, there were not enough articles in the dataset to estimate these).]({{site.url}}/something-of-crunch/assets/images/2023-12-20/figure4.png)
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 4. Percentage of articles since 1975 in six journals that reported empirical research (inset figure); average number of authors since 1975 on articles that reported empirical research vs. regular philosophy articles (main figure). Shaded areas show 95% CI (note that before 2001-5, there were not enough articles in the dataset to estimate these).</p>
-<br>
 
 The percentage of philosophy articles that report original empirical research (as estimated by my method) has risen substantially since 1975 and in particular since around 2000. Moreover, as one would expect, the average number of authors on these articles is both much larger in general than the average number of authors on ‘regular’ philosophy articles and has also risen steeply since 1975. This provides some evidence for explanation 3. (though note that the average number of authors has also been increasing over time for regular articles, so 3. does not provide a full explanation).
 
