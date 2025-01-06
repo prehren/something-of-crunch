@@ -15,7 +15,7 @@ Next, I needed a list of top generalist philosophy journals. I used [LeiterRepor
 
 For each of the 22 LeiterReports journals, I calculated the proportion of articles published in the last 10 years from each of the five major sub-field clusters listed on PhilPapers. If an article was assigned to more than one sub-field cluster, I included it more than once. Figure 1 shows these proportions averaged across journals. The LEMM-ing fields indeed dominate: The share of LEM&M articles is larger than the share of articles from the other four sub-field clusters *combined* (56.1% vs. 43.9%).
 
-![Figure 1. Mean proportion of articles from philosophy's five major sub-fields across across 22 top generalist journals (SL&M = Philosophy of Science, Logic and Mathematics).]({{site.url}}/something-of-crunch/assets/images/2023-12-11/fig1.png)
+![Figure 1. Mean proportion of articles from philosophy's five major sub-fields across across 22 top generalist journals (SL&M = Philosophy of Science, Logic and Mathematics).]({{site.url}}/something-of-crunch/assets/images/2023-12-11/fig1NEW.png)
 <p style="text-align:center; font-size: 0.85em; padding-right: 30px; padding-left: 30px;">Figure 1. Mean proportion of articles from philosophy's five major sub-fields across across 22 top generalist journals (SL&M = Philosophy of Science, Logic and Mathematics).</p>
 <br>
 
