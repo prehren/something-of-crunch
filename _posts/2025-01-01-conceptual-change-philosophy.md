@@ -11,7 +11,6 @@ While major problems still remain with testing for conceptual change directly (e
 
 To construct our corpus, I used a Python script to download the pdfs of all articles published in six [high-profile, generalist philosophy journals](https://leiterreports.typepad.com/blog/2022/07/best-general-philosophy-journals-2022.html) (<em>Australasian Journal of</em> <em>Philosophy</em>; <em>Analysis</em>; <em>Mind</em>; <em>Noûs</em>; <em>Philosophical Studies</em>; <em>Synthese</em>) between 1971 and 2021. We only included full-length, original articles (so no abstracts, book reviews, errata, etc.). I then removed cover pages, headers and footers, converted the pdfs to plain text and cleaned up the resulting text files. The table below shows the number of articles from each journal, as well as the total number of articles.
 
-<br>
 <table>
        <tr>
            <td class="thead depvarhead firsttablerow leftalign" style="font-weight:bold; font-style:normal;">Journal</td>
@@ -72,7 +71,6 @@ Recall that our goal was to investigate if the meaning of any of our three targe
 
 Are there identifiable points at which the meaning of our <em>w</em><sub>T</sub>s has changed? To test for this, we used change-point detection. There are many methods to look for change-points in time series data (for a survey, see, Aminikhanghahi and Cook, 2017); here, we used kernel-based change point analysis with a linear kernel. The basic idea with this method is to average all the values in the time series within a certain window of time immediately before and after a given candidate change-point, and then to check if the difference between these two means exceeds a certain threshold. If it does, a (local) change-point has been detected. The table below shows the results, for the word2vec embeddings as well as the BERT embeddings. We find that the only <em>w</em><sub>T</sub> for which there is evidence of the presence of local change-points across both models is &#8216;consciousness.&#8217; (Lucien had BERT generate two different kinds of embedding, narrow word embeddings, for which the model considers a relatively small window of tokens around each word, and broad usage embeddings, for which the model considers a much larger window of tokens around each word [in this case, 128]).
 
-<br>
 <table>
     <tr>
         <td class="thead depvarhead firsttablerow leftalign" style="font-weight:bold; font-style:normal;">Embedding</td>
