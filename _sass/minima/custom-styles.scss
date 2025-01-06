@@ -1,10 +1,3 @@
-#target {
-    overflow-y: auto;
-    overflow-x: auto;
-    resize: both;
-    position: relative;
-    z-index: 2;
-}
 img {
   display: block;
   margin-left: auto;
@@ -13,6 +6,8 @@ img {
 table {
   border-collapse:collapse;
   width:auto;
+  margin-bottom:15px;
+  margin-top:15px;
   table-layout:auto;
   margin-left:auto;
   margin-right:auto;
